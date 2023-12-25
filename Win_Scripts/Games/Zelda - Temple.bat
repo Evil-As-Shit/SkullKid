@@ -1,0 +1,1 @@
+start "" "C:\SkullKid\SkullKidGame\Win_Scripts\Games\Zelda - Temple.ahk"

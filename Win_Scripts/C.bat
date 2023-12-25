@@ -1,0 +1,1 @@
+start C:\SkullKid\SkullKidGame\Win_Scripts\C.ahk

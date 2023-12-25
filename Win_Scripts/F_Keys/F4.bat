@@ -1,0 +1,1 @@
+start C:\SkullKid\SkullKidGame\Win_Scripts\F_Keys\F4.ahk

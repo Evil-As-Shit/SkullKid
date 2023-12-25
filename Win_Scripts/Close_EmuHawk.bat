@@ -1,0 +1,1 @@
+run C:\SkullKid\SkullKidGame\Win_Scripts\CloseEmuHawk.ahk

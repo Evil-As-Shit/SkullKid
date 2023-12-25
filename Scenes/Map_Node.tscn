@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://6ip2bp7av6r7"]
+
+[ext_resource type="Texture2D" uid="uid://copbauiflnp63" path="res://Assets/Map_Node.png" id="1_fxrch"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57cu7"]
+atlas = ExtResource("1_fxrch")
+region = Rect2(56, 0, 28, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qajg4"]
+atlas = ExtResource("1_fxrch")
+region = Rect2(0, 0, 28, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flgpb"]
+atlas = ExtResource("1_fxrch")
+region = Rect2(28, 0, 28, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3p424"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57cu7")
+}],
+"loop": true,
+"name": &"beat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qajg4")
+}],
+"loop": true,
+"name": &"level",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flgpb")
+}],
+"loop": true,
+"name": &"start",
+"speed": 5.0
+}]
+
+[node name="Map_Node" type="AnimatedSprite2D"]
+position = Vector2(476, 189)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_3p424")
+animation = &"level"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 1.0
+offset_top = -9.0
+offset_right = 21.0
+offset_bottom = 10.0
+text = "8"
+scroll_active = false
+shortcut_keys_enabled = false

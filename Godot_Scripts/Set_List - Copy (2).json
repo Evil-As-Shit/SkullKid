@@ -1,0 +1,529 @@
+{
+	"Animal Crossing": {
+		"Games": {
+			"Intro": {
+				"In_Set": true,
+				"Rom": "AnimalCrossing.iso",
+				"State": 3
+			},
+			"K.K. Slider": {
+				"In_Set": true,
+				"Rom": "AnimalCrossing.iso",
+				"State": 3
+			},
+			"Town Hall Day": {
+				"In_Set": true,
+				"Rom": "AnimalCrossing.iso",
+				"State": 3
+			}
+		},
+		"In_Set": false
+	},
+	"Banjo-Kazooie": {
+		"Games": {
+			"Gruntilda's Lair": {
+				"In_Set": true,
+				"Rom": "Banjo-Kazooie.v64",
+				"State": 1
+			},
+			"Treasure Trove Cove": {
+				"In_Set": true,
+				"Rom": "Banjo-Kazooie.v64",
+				"State": 1
+			}
+		},
+		"In_Set": false
+	},
+	"Castlevania": {
+		"Games": {
+			"Beginning": {
+				"In_Set": true,
+				"Rom": "Castlevania 3 - Dracula's Curse.nes",
+				"State": 1
+			},
+			"Bloody Tears": {
+				"In_Set": true,
+				"Rom": "Castlevania 2 - Simon's Quest.nes",
+				"State": 1
+			},
+			"Vampire Killer": {
+				"In_Set": true,
+				"Rom": "Castlevania.nes",
+				"State": 1
+			}
+		},
+		"In_Set": true
+	},
+	"Donkey Kong Country": {
+		"Games": {
+			"Aquatic Ambiance": {
+				"In_Set": true,
+				"Rom": "Donkey Kong Country.smc",
+				"State": 3
+			},
+			"Gang Plank Galleon": {
+				"In_Set": true,
+				"Rom": "Donkey Kong Country.smc",
+				"State": 3
+			},
+			"Island Swing": {
+				"In_Set": true,
+				"Rom": "Donkey Kong Country.smc",
+				"State": 3
+			}
+		},
+		"In_Set": false
+	},
+	"GamesList": [
+		"Zelda",
+		"Kid Icarus",
+		"Pokemon",
+		"Yoshi's Island",
+		"Kirby",
+		"Karnov",
+		"Gremlins",
+		"Megaman 3",
+		"Mario",
+		"Luigi's Mansion",
+		"Banjo-Kazooie",
+		"Star Tropics",
+		"Little Nemo",
+		"Castlevania",
+		"Tetris",
+		"Rygar",
+		"Donkey Kong Country",
+		"Animal Crossing"
+	],
+	"Gremlins": {
+		"Games": {
+			"Cutscene": {
+				"In_Set": true,
+				"Rom": "Gremlins 2 - The New Batch.nes",
+				"State": 1
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "Gremlins 2 - The New Batch.nes",
+				"State": 0
+			},
+			"Ventilation Shafts": {
+				"In_Set": true,
+				"Rom": "Gremlins 2 - The New Batch.nes",
+				"State": 2
+			}
+		},
+		"In_Set": false
+	},
+	"Karnov": {
+		"Games": {
+			"Karnov": {
+				"In_Set": true,
+				"Rom": "Karnov.nes",
+				"State": 1,
+				"Title": true
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "Karnov.nes",
+				"State": 2
+			}
+		},
+		"In_Set": false
+	},
+	"Kid Icarus": {
+		"Games": {
+			"Main Theme": {
+				"In_Set": true,
+				"Rom": "Kid Icarus.nes",
+				"State": 2
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "Kid Icarus.nes",
+				"State": 3
+			}
+		},
+		"In_Set": true
+	},
+	"Kirby": {
+		"Games": {
+			"Grape Gardens": {
+				"In_Set": true,
+				"Rom": "Kirbys Adventure.nes",
+				"State": 1
+			},
+			"Green Greens": {
+				"In_Set": true,
+				"Rom": "Super Smash Bros.n64",
+				"State": 1
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "Kirbys Adventure.nes",
+				"State": 2
+			}
+		},
+		"In_Set": false
+	},
+	"Little Nemo": {
+		"Games": {
+			"Cloud Ruins": {
+				"In_Set": true,
+				"Rom": "Little Nemo - The Dream Master.nes",
+				"State": 5
+			},
+			"Intro": {
+				"In_Set": true,
+				"Rom": "Little Nemo - The Dream Master.nes",
+				"State": 1
+			},
+			"Mushroom Forest": {
+				"In_Set": true,
+				"Rom": "Little Nemo - The Dream Master.nes",
+				"State": 3
+			},
+			"Night Sea": {
+				"In_Set": true,
+				"Rom": "Little Nemo - The Dream Master.nes",
+				"State": 4
+			},
+			"Nightmare Land": {
+				"In_Set": true,
+				"Rom": "Little Nemo - The Dream Master.nes",
+				"State": 6
+			},
+			"Title Theme": {
+				"In_Set": true,
+				"Rom": "Little Nemo - The Dream Master.nes",
+				"State": 2
+			}
+		},
+		"In_Set": false
+	},
+	"Luigi's Mansion": {
+		"Games": {
+			"Theme": {
+				"In_Set": true,
+				"Rom": "LuigisMansion.iso",
+				"State": 3
+			}
+		},
+		"In_Set": true
+	},
+	"Mario": {
+		"Games": {
+			"Dr. Mario": {
+				"In_Set": true,
+				"Rom": "Dr Mario.nes",
+				"State": 1
+			},
+			"Mario Ending": {
+				"In_Set": true,
+				"Rom": "Super Mario Bros 3 Mix.nes",
+				"State": 1
+			},
+			"Mario Kart 64": {
+				"In_Set": true,
+				"Rom": "Mario Kart 64.z64",
+				"State": 1
+			},
+			"Mario Land": {
+				"In_Set": true,
+				"Rom": "Super Mario Land.gb",
+				"State": 1
+			},
+			"Mario Sunshine": {
+				"In_Set": true,
+				"Rom": "SuperMarioSunshine.iso",
+				"State": 1
+			},
+			"Mario World": {
+				"In_Set": true,
+				"Rom": "Diagonal Mario.smc",
+				"State": 1
+			},
+			"SMB3 - Overworld": {
+				"In_Set": true,
+				"Rom": "Super Mario Bros 3.nes",
+				"State": 2
+			}
+		},
+		"In_Set": false
+	},
+	"Megaman 3": {
+		"Games": {
+			"Boss Theme": {
+				"In_Set": true,
+				"Rom": "Mega Man 3.nes",
+				"State": 5
+			},
+			"Intro": {
+				"In_Set": true,
+				"Rom": "Mega Man 3.nes",
+				"State": 0
+			},
+			"Snakeman": {
+				"In_Set": true,
+				"Rom": "Mega Man 3.nes",
+				"State": 2
+			},
+			"Sparkman": {
+				"In_Set": true,
+				"Rom": "Mega Man 3.nes",
+				"State": 4
+			},
+			"Stage Select": {
+				"In_Set": true,
+				"Rom": "Mega Man 3.nes",
+				"State": 1
+			},
+			"Topman": {
+				"In_Set": true,
+				"Rom": "Mega Man 3.nes",
+				"State": 3
+			}
+		},
+		"In_Set": false
+	},
+	"Pokemon": {
+		"Games": {
+			"Lavender Town": {
+				"In_Set": true,
+				"Rom": "Pokemon Red.gb",
+				"State": 3
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "Pokemon Red.gb",
+				"State": 2
+			},
+			"Viridian Forest": {
+				"In_Set": true,
+				"Rom": "Pokemon Red.gb",
+				"State": 4
+			}
+		},
+		"In_Set": true
+	},
+	"Rygar": {
+		"Games": {
+			"Theme": {
+				"In_Set": true,
+				"Rom": "Rygar.nes",
+				"State": 1
+			}
+		},
+		"In_Set": true
+	},
+	"SongsList": [
+		[
+			"Title",
+			"Zelda - Main Theme",
+			"Temple",
+			"Labyrinth",
+			"Kokiri Forest",
+			"Tal Tal Heights",
+			"Dark World",
+			"Dragon Roost"
+		],
+		[
+			"Title",
+			"Main Theme"
+		],
+		[
+			"Title",
+			"Lavender Town",
+			"Viridian Forest"
+		],
+		[
+			"Title",
+			"Flower Garden",
+			"Touch Fuzzy, Get Dizzy"
+		],
+		[
+			"Title",
+			"Grape Gardens",
+			"Green Greens"
+		],
+		[
+			"Title",
+			"Karnov"
+		],
+		[
+			"Title",
+			"Cutscene",
+			"Ventilation Shafts"
+		],
+		[
+			"Intro",
+			"Stage Select",
+			"Snakeman",
+			"Topman",
+			"Sparkman",
+			"Boss Theme"
+		],
+		[
+			"SMB3 - Overworld",
+			"Mario Land",
+			"Dr. Mario",
+			"Mario World",
+			"Mario Kart 64",
+			"Mario Sunshine",
+			"Mario Ending"
+		],
+		[
+			"Theme"
+		],
+		[
+			"Gruntilda's Lair",
+			"Treasure Trove Cove"
+		],
+		[
+			"Overworld Theme",
+			"Inside Sub-C",
+			"Off In The Blue",
+			"Chapter Introduction",
+			"Sailing",
+			"Boss Theme"
+		],
+		[
+			"Intro",
+			"Title Theme",
+			"Mushroom Forest",
+			"Night Sea",
+			"Cloud Ruins",
+			"Nightmare Land"
+		],
+		[
+			"Vampire Killer",
+			"Bloody Tears",
+			"Beginning"
+		],
+		[
+			"Theme"
+		],
+		[
+			"Theme"
+		],
+		[
+			"Island Swing",
+			"Aquatic Ambiance",
+			"Gang Plank Galleon"
+		],
+		[
+			"Intro",
+			"K.K. Slider",
+			"Town Hall Day"
+		]
+	],
+	"Star Tropics": {
+		"Games": {
+			"Boss Theme": {
+				"In_Set": true,
+				"Rom": "Startropics.nes",
+				"State": 1
+			},
+			"Chapter Introduction": {
+				"In_Set": true,
+				"Rom": "Startropics.nes",
+				"State": 1
+			},
+			"Inside Sub-C": {
+				"In_Set": true,
+				"Rom": "Startropics.nes",
+				"State": 1
+			},
+			"Off In The Blue": {
+				"In_Set": true,
+				"Rom": "Startropics.nes",
+				"State": 1
+			},
+			"Overworld Theme": {
+				"In_Set": true,
+				"Rom": "Startropics.nes",
+				"State": 1
+			},
+			"Sailing": {
+				"In_Set": true,
+				"Rom": "Startropics.nes",
+				"State": 1
+			}
+		},
+		"In_Set": false
+	},
+	"Tetris": {
+		"Games": {
+			"Theme": {
+				"In_Set": true,
+				"Rom": "Tetris.nes",
+				"State": 1
+			}
+		},
+		"In_Set": false
+	},
+	"Yoshi's Island": {
+		"Games": {
+			"Flower Garden": {
+				"In_Set": true,
+				"Rom": "Yoshi's Island.smc",
+				"State": 1
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "Yoshi's Island.smc",
+				"State": 3
+			},
+			"Touch Fuzzy, Get Dizzy": {
+				"In_Set": true,
+				"Rom": "Yoshi's Island.smc",
+				"State": 2
+			}
+		},
+		"In_Set": true
+	},
+	"Zelda": {
+		"Games": {
+			"Dark World": {
+				"In_Set": true,
+				"Rom": "Zelda - A Link to The Past.smc",
+				"State": 1
+			},
+			"Dragon Roost": {
+				"In_Set": true,
+				"Rom": "ZeldaWindWaker.iso",
+				"State": 1
+			},
+			"Kokiri Forest": {
+				"In_Set": true,
+				"Rom": "The Legend of Zelda - Ocarina of Time.v64",
+				"State": 3
+			},
+			"Labyrinth": {
+				"In_Set": true,
+				"Rom": "The Legend of Zelda.nes",
+				"State": 2
+			},
+			"Tal Tal Heights": {
+				"In_Set": true,
+				"Rom": "Link's Awakening.gbc",
+				"State": 1
+			},
+			"Temple": {
+				"In_Set": true,
+				"Rom": "Zelda 2 - The Adventure of Link.nes",
+				"State": 1
+			},
+			"Title": {
+				"In_Set": true,
+				"Rom": "The Legend of Zelda.nes",
+				"State": 3
+			},
+			"Zelda - Main Theme": {
+				"In_Set": true,
+				"Rom": "The Legend of Zelda.nes",
+				"State": 1
+			}
+		},
+		"In_Set": true
+	}
+}

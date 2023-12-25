@@ -1,0 +1,13 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1668459540
+default_env.tres::Environment::-1::1659741121::0::1::::<><>::
+icon.png::CompressedTexture2D::8949611521789323265::1659649442::1659741465::1::::<><>::
+::res://Godot_Scripts/::1665897490
+MainMenu.gd::GDScript::-1::1665897490::0::1::::<>Node2D<>::
+Set_List.json::JSON::-1::1666044535::0::1::::<><>::
+::res://Scenes/::1666044537
+test.tscn::PackedScene::3364023543182298238::1666044537::0::1::::<><>::res://Godot_Scripts/MainMenu.gd
+::res://Win_Scripts/::1665795820
+::res://Win_Scripts/F_Keys/::1665722178
+::res://Win_Scripts/Games/::1665783604
+New Text Document.txt::TextFile::-1::1665713486::0::1::::<><>::
