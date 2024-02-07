@@ -14,7 +14,8 @@ var songs_order = []
 var set_start = false
 
 func _ready():
-	get_node("SkullKid64").play("default")
+#	get_tree().get_root().set_transparent_background(true)
+	get_node("CanvasLayer/SkullKid64").play("default")
 	OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Song_Controller.bat",[])
 
 func start_program():
@@ -140,6 +141,13 @@ func _input(_event):
 						song_num = 0
 						return
 					else:
+						#Insert Map Code Here
+						#Pixel fade in MapStuff from black
+						#Pause for a second or two, Revel Map Path, Animate Level Nub appear
+						#Animate progress in ParthFollow2D to next game level
+						#Pause for a second or two
+						#Pixel fade out MapStuff to black
+						#Resume program
 						program()
 			else:
 				_on_button_pressed()

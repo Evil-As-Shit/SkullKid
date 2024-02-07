@@ -1,8 +1,12 @@
+SubViewport
+SubViewportContainer
+Sprite2D
+TileMap
+AnimatedSprite2D
+Node2D
 PathFollow2D
 Path2D
 RichTextLabel
-AnimatedSprite2D
-Sprite2D
 CheckButton
 Tree
 Control

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://balymvkqlrd4a"
-path="res://.godot/imported/SkullKid64.png-ac11ac457c18b529a3626aeedca3e599.ctex"
+uid="uid://bxsj76kyubtiu"
+path="res://.godot/imported/TacomaMarioWorldMapClearedPaths1.png-128e274a8eea1b00715155c8bb571272.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/SkullKid64.png"
-dest_files=["res://.godot/imported/SkullKid64.png-ac11ac457c18b529a3626aeedca3e599.ctex"]
+source_file="res://Assets/Map/TacomaMarioWorldMapClearedPaths1.png"
+dest_files=["res://.godot/imported/TacomaMarioWorldMapClearedPaths1.png-128e274a8eea1b00715155c8bb571272.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dys1ppanqh0bn"
-path="res://.godot/imported/SK_Icon_Inverted.png-0fbd07e846f0d498bdc1cdcbe8f212aa.ctex"
+uid="uid://balymvkqlrd4a"
+path="res://.godot/imported/SkullKid64.png-ba6ae1b16e678f97b990e65bc687dc63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/SK_Icon_Inverted.png"
-dest_files=["res://.godot/imported/SK_Icon_Inverted.png-0fbd07e846f0d498bdc1cdcbe8f212aa.ctex"]
+source_file="res://Assets/icons/SkullKid64.png"
+dest_files=["res://.godot/imported/SkullKid64.png-ba6ae1b16e678f97b990e65bc687dc63.ctex"]
 
 [params]
 

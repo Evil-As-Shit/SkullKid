@@ -1,3 +1,4 @@
+res://Scenes/PixelFade.gdshader
 res://Scenes/Program.tscn
 res://Scenes/Map_Node.tscn
-res://Godot_Scripts/Set_List.json
+res://Godot_Scripts/MainMenu.gd
