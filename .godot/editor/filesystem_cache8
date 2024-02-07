@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707339619
+::res://::1707346367
 default_env.tres::Environment::-1::1703471840::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1703471840::0::1::::<><>::
 icon.png::CompressedTexture2D::8949611521789323265::1703471840::1703471840::1::::<><>::
-::res://Assets/::1707262960
+::res://Assets/::1707346218
 Boarder.png::CompressedTexture2D::5685520632953314514::1707262958::1707262960::1::::<><>::
 Map_Node.png::CompressedTexture2D::5786512624690162990::1703471840::1703471840::1::::<><>::
+pixelfadeshader.tres::ShaderMaterial::3926145333317474695::1707346218::0::1::::<><>::res://Scenes/PixelFade.gdshader
 Skull_Kid_Map_Sprite.png::CompressedTexture2D::7950580303899094291::1703471840::1703471840::1::::<><>::
 Skull_Kid_Sprite-sheet.png::CompressedTexture2D::5460410028194201537::1703471840::1703471840::1::::<><>::
 Skull_Kid_Sprite.png::CompressedTexture2D::7975191301845067959::1703471840::1703471840::1::::<><>::
@@ -14,7 +15,8 @@ SkullKid64.png::CompressedTexture2D::2410608595521748766::1703471840::1707176151
 SkullKid64_Transparent.png::CompressedTexture2D::920025235133533604::1703473041::1707176180::1::::<><>::
 SkullKidMasksSticker.png::CompressedTexture2D::2452143917105717475::1703471840::1707176162::1::::<><>::
 SK_Icon_Inverted.png::CompressedTexture2D::8882559315148255979::1703471840::1707176197::1::::<><>::
-::res://Assets/Map/::1707292304
+::res://Assets/Map/::1707341866
+black.png::CompressedTexture2D::9073744958224222958::1707341863::1707341866::1::::<><>::
 Level_Nub_Apear.png::CompressedTexture2D::4739070833288153443::1707188511::1707188521::1::::<><>::
 Level_Nub_Sprite.png::CompressedTexture2D::1945305716331455098::1707260868::1707260871::1::::<><>::
 Level_Nub_Sprite_Completed.png::CompressedTexture2D::7179132529958009768::1707188504::1707188521::1::::<><>::
@@ -32,11 +34,11 @@ SetListGen.gd::GDScript::-1::1703471840::0::1::::<>ScrollContainer<>::
 Set_List - Copy (2).json::JSON::-1::1703471840::0::1::::<><>::
 Set_List - Copy.json::JSON::-1::1703471840::0::1::::<><>::
 Set_List.json::JSON::-1::1703471840::0::1::::<><>::
-::res://Scenes/::1707293256
+::res://Scenes/::1707346338
 Map.tscn::PackedScene::3488018220719649095::1703471840::0::1::::<><>::
-Map_Node.tscn::PackedScene::2193328223288623046::1707293249::0::1::::<><>::uid://copbauiflnp63::::res://Assets/Map_Node.png
-PixelFade.gdshader::Shader::-1::1707293256::0::1::::<><>::
-Program.tscn::PackedScene::634038654255306484::1707293249::0::1::::<><>::res://Godot_Scripts/MainMenu.gd<>uid://dys1ppanqh0bn::::res://Assets/icons/SK_Icon_Inverted.png<>res://Godot_Scripts/list_controller.gd<>uid://ndwxfqde0cqu::::res://Assets/icons/SkullKid64_Transparent.png<>res://Scenes/PixelFade.gdshader<>uid://cga75hrpyqpu0::::res://Assets/Map/TacomaMarioWorldMap1.png<>uid://balymvkqlrd4a::::res://Assets/icons/SkullKid64.png<>uid://dljk5p12vcrtj::::res://Assets/Skull_Kid_Map_Sprite.png<>uid://dd84ow0gtxi3f::::res://Assets/Map/WaterAnimation.png<>uid://bbytilgmermbi::::res://Assets/Map/TacomaMarioWorldMapBushesForeground1.png<>uid://cgnmonv26vyjp::::res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png<>uid://b8rv2lx0kvkpv::::res://Assets/Map/Level_Nub_Apear.png<>uid://2yk5vqmhnr0m::::res://Assets/Map/Level_Nub_Sprite.png<>uid://cnadxupix736u::::res://Assets/Boarder.png<>uid://cn75g8j5evndk::::res://Assets/Map/TacomaMarioWorldMap1_WaterLayer.png
+Map_Node.tscn::PackedScene::2193328223288623046::1707346218::0::1::::<><>::uid://copbauiflnp63::::res://Assets/Map_Node.png
+PixelFade.gdshader::Shader::-1::1707346338::0::1::::<><>::
+Program.tscn::PackedScene::634038654255306484::1707346218::0::1::::<><>::res://Godot_Scripts/MainMenu.gd<>uid://dys1ppanqh0bn::::res://Assets/icons/SK_Icon_Inverted.png<>res://Godot_Scripts/list_controller.gd<>uid://ndwxfqde0cqu::::res://Assets/icons/SkullKid64_Transparent.png<>uid://cga75hrpyqpu0::::res://Assets/Map/TacomaMarioWorldMap1.png<>uid://bv64bmjb2tc7x::::res://Assets/pixelfadeshader.tres<>uid://balymvkqlrd4a::::res://Assets/icons/SkullKid64.png<>uid://dljk5p12vcrtj::::res://Assets/Skull_Kid_Map_Sprite.png<>uid://dd84ow0gtxi3f::::res://Assets/Map/WaterAnimation.png<>uid://bbytilgmermbi::::res://Assets/Map/TacomaMarioWorldMapBushesForeground1.png<>uid://cgnmonv26vyjp::::res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png<>uid://b8rv2lx0kvkpv::::res://Assets/Map/Level_Nub_Apear.png<>uid://2yk5vqmhnr0m::::res://Assets/Map/Level_Nub_Sprite.png<>uid://cnadxupix736u::::res://Assets/Boarder.png<>uid://cn75g8j5evndk::::res://Assets/Map/TacomaMarioWorldMap1_WaterLayer.png
 ::res://Win_Scripts/::1703471840
 ::res://Win_Scripts/F_Keys/::1703471840
 ::res://Win_Scripts/Games/::1703471840
