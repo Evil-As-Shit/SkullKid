@@ -1,3 +1,7 @@
+Node
+Control
+HSlider
+RichTextLabel
 AnimationPlayer
 ColorRect
 SubViewport
@@ -8,10 +12,8 @@ AnimatedSprite2D
 Node2D
 PathFollow2D
 Path2D
-RichTextLabel
 CheckButton
 Tree
-Control
 Button
 VBoxContainer
 Panel

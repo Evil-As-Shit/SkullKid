@@ -32,7 +32,7 @@
 				"State": 1
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Castlevania": {
 		"Games": {
@@ -57,7 +57,7 @@
 				"State": 1
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Donkey Kong Country": {
 		"Games": {
@@ -67,17 +67,17 @@
 				"State": 2
 			},
 			"Gang Plank Galleon": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Donkey Kong Country.smc",
 				"State": 3
 			},
 			"Island Swing": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Donkey Kong Country.smc",
 				"State": 1
 			},
 			"Title": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Donkey Kong Country.smc",
 				"State": 4
 			}
@@ -101,22 +101,22 @@
 	},
 	"GamesList": [
 		"Zelda",
+		"Banjo-Kazooie",
+		"Pokemon",
+		"Metroid",
+		"Mario",
+		"Luigi's Mansion",
+		"Donkey Kong Country",
+		"Megaman 3",
+		"Duck Tales",
 		"Karnov",
 		"Magic Kingdom",
-		"Metroid",
 		"Little Nemo",
 		"Yoshi's Island",
-		"Donkey Kong Country",
-		"Duck Tales",
 		"Castlevania",
-		"Mario",
 		"Tetris",
-		"Banjo-Kazooie",
 		"Kid Icarus",
 		"Kirby",
-		"Megaman 3",
-		"Luigi's Mansion",
-		"Pokemon",
 		"Gremlins",
 		"Star Tropics",
 		"Rygar",
@@ -156,7 +156,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Kid Icarus": {
 		"Games": {
@@ -231,7 +231,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Luigi's Mansion": {
 		"Games": {
@@ -246,7 +246,7 @@
 				"State": 5
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Magic Kingdom": {
 		"Games": {
@@ -261,7 +261,7 @@
 				"State": 0
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Mario": {
 		"Games": {
@@ -271,42 +271,42 @@
 				"State": 1
 			},
 			"Mario Ending": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Super Mario Bros 3 Mix.nes",
 				"State": 1
 			},
 			"Mario Kart 64": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mario Kart 64.z64",
 				"State": 1
 			},
 			"Mario Land": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Super Mario Land.gb",
 				"State": 1
 			},
 			"Mario Sunshine": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "SuperMarioSunshine.iso",
 				"State": 2
 			},
 			"Mario World": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Diagonal Mario.smc",
 				"State": 1
 			},
 			"SMB3 - Overworld": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Super Mario Bros 3.nes",
 				"State": 1
 			},
 			"Title": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Super Mario Bros 3.nes",
 				"State": 2
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Megaman 3": {
 		"Games": {
@@ -341,7 +341,7 @@
 				"State": 3
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Metroid": {
 		"Games": {
@@ -381,7 +381,7 @@
 				"State": 3
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Rygar": {
 		"Games": {
@@ -405,17 +405,58 @@
 			"Dragon Roost"
 		],
 		[
+			"Gruntilda's Lair",
+			"Treasure Trove Cove"
+		],
+		[
+			"Title",
+			"Lavender Town",
+			"Viridian Forest"
+		],
+		[
+			"Title",
+			"Metroid - Title",
+			"Kraid's Theme"
+		],
+		[
+			"Title",
+			"SMB3 - Overworld",
+			"Mario Land",
+			"Dr. Mario",
+			"Mario World",
+			"Mario Kart 64",
+			"Mario Sunshine",
+			"Mario Ending"
+		],
+		[
+			"Title",
+			"Theme"
+		],
+		[
+			"Title",
+			"Island Swing",
+			"Aquatic Ambiance",
+			"Gang Plank Galleon"
+		],
+		[
+			"Intro",
+			"Stage Select",
+			"Snakeman",
+			"Topman",
+			"Sparkman",
+			"Boss Theme"
+		],
+		[
+			"Title",
+			"Moon Theme"
+		],
+		[
 			"Title",
 			"Karnov"
 		],
 		[
 			"Title",
 			"Haunted Mansion"
-		],
-		[
-			"Title",
-			"Metroid - Title",
-			"Kraid's Theme"
 		],
 		[
 			"Intro",
@@ -432,36 +473,12 @@
 		],
 		[
 			"Title",
-			"Island Swing",
-			"Aquatic Ambiance",
-			"Gang Plank Galleon"
-		],
-		[
-			"Title",
-			"Moon Theme"
-		],
-		[
-			"Title",
 			"Vampire Killer",
 			"Bloody Tears",
 			"Beginning"
 		],
 		[
-			"Title",
-			"SMB3 - Overworld",
-			"Mario Land",
-			"Dr. Mario",
-			"Mario World",
-			"Mario Kart 64",
-			"Mario Sunshine",
-			"Mario Ending"
-		],
-		[
 			"Theme"
-		],
-		[
-			"Gruntilda's Lair",
-			"Treasure Trove Cove"
 		],
 		[
 			"Title",
@@ -472,23 +489,6 @@
 			"Grape Gardens",
 			"Green Greens",
 			"Gourmet Race"
-		],
-		[
-			"Intro",
-			"Stage Select",
-			"Snakeman",
-			"Topman",
-			"Sparkman",
-			"Boss Theme"
-		],
-		[
-			"Title",
-			"Theme"
-		],
-		[
-			"Title",
-			"Lavender Town",
-			"Viridian Forest"
 		],
 		[
 			"Title",
@@ -575,7 +575,7 @@
 				"State": 4
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Zelda": {
 		"Games": {

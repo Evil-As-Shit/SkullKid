@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var map_transition: AnimationPlayer
 var game_num= 0   #game number
 var song_num = 0   #song number
 var text_list = []
@@ -13,13 +14,15 @@ var games_order = []
 var songs_order = []
 var set_start = false
 
+
+
 func _ready():
 #	get_tree().get_root().set_transparent_background(true)
 	get_node("CanvasLayer/SkullKid64").play("default")
 	OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Song_Controller.bat",[])
 
 func start_program():
-	get_node("CheckButton").hide()
+	get_node("CanvasLayer/CheckButton").hide()
 	temp_list = load_songlist("res://Godot_Scripts/Set_List.json")
 	games_order = temp_list["GamesList"]
 	temp_list.erase("GamesList")
@@ -125,12 +128,16 @@ func start_program():
 ##			songs_list[x].append(song)
 ##		x = x + 1
 
+
+
+
 func _input(_event):
-		if(Input.is_action_just_pressed("Next_Song")): # The "p" Button is Pressed *When 'c' is pressed AHK switches to godot and sends the 'C' key.
+		if(Input.is_action_just_pressed("Next_Song")): # The "p" Button is Pressed *When 'c' is pressed AHK switches to godot and sends the 'p' key.
 			if(set_start == true):
 				if(songs_list[game_num].size()-1 != song_num):
 					song_num = song_num+1
 					program()
+					return
 				else:
 					game_num= game_num+ 1
 					song_num = 0
@@ -149,10 +156,11 @@ func _input(_event):
 						#Pixel fade out MapStuff to black
 						#Resume program
 						program()
+						return
 			else:
 				_on_button_pressed()
 
-		if(Input.is_action_just_pressed("Previous_Song")): # The "o" Button is Pressed *When 'a' is pressed AHK switches to godot and sends the '' key.
+		if(Input.is_action_just_pressed("Previous_Song")): # The "o" Button is Pressed *When 'a' is pressed AHK switches to godot and sends the 'o' key.
 			if(set_start == true):
 				if(song_num != 0):
 					song_num = song_num-1
@@ -288,7 +296,7 @@ func program():
 
 
 func _on_check_button_pressed():
-	var list = get_node("Control")
+	var list = get_node("CanvasLayer/Control2")
 	if list.visible == true:
 		list.visible = false
 	else:

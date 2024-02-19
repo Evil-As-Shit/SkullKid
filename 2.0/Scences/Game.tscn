@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv2r7csuhfiok"]
+
+[ext_resource type="Script" path="res://2.0/Scripts/Global.gd" id="1_awt0s"]
+[ext_resource type="Script" path="res://2.0/Scripts/Game_State.gd" id="2_u4c6k"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Global" type="Node" parent="."]
+script = ExtResource("1_awt0s")
+
+[node name="Game_State" type="Node" parent="."]
+script = ExtResource("2_u4c6k")
