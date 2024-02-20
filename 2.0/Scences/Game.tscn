@@ -53,6 +53,42 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb05i"]
+atlas = ExtResource("7_3fxn4")
+region = Rect2(42, 0, 21, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dsp2"]
+atlas = ExtResource("7_3fxn4")
+region = Rect2(63, 0, 21, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n746y"]
+atlas = ExtResource("7_3fxn4")
+region = Rect2(84, 0, 21, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_588xe"]
+atlas = ExtResource("7_3fxn4")
+region = Rect2(105, 0, 21, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ddhhl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb05i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dsp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n746y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_588xe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
 [sub_resource type="Animation" id="Animation_mjc37"]
 resource_name = "Pixel_Fade"
 length = 3.0
@@ -113,42 +149,6 @@ _data = {
 "Pixel_Fade": SubResource("Animation_mjc37"),
 "RESET": SubResource("Animation_g0wsp")
 }
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jb05i"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(42, 0, 21, 25)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3dsp2"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(63, 0, 21, 25)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n746y"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(84, 0, 21, 25)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_588xe"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(105, 0, 21, 25)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ddhhl"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jb05i")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3dsp2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n746y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_588xe")
-}],
-"loop": true,
-"name": &"default",
-"speed": 7.0
-}]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1gu0"]
 texture = ExtResource("6_rv3na")
@@ -1323,7 +1323,7 @@ animations = [{
 
 [sub_resource type="Curve2D" id="Curve2D_kv2y4"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 150, 125.4, -2.04907, -0.17818, -4.51426, 8.55319, 176, 152.4, -9.89949, -0.0707107, 16.6319, 6.56604, 215, 158, -29.2257, -8.91661, 18.1726, -0.282843, 240, 203, 0, 0, 0, 0, 274, 203, -2.54271, -8.6876, 2.54271, 8.6876, 274, 241, -3.60217, -0.847571, 3.60217, 0.847571, 290, 257, -9.32328, -0.211893, 9.32328, 0.211893, 355, 257, -0.211892, -14.8325, -16.1038, -4.44975, 363, 281, 5.50921, -8.47571, -0.423786, 35.8099, 337, 296, 8.26381, -2.22487, 0, 13.879, 308, 322, 0, 0, 2.9665, 11.5481, 308, 374, -19.0703, 0.635678, 7.20435, -0.317839, 340, 390, -13.4552, 0, 8.15787, -1.58919, 452, 390, 0.317839, -15.3622, 34.6444, 2.22487, 461, 421, -7.73408, -2.22487, 11.2303, -0.105946, 499, 390, -7.3103, 0.211893, 0.137427, 20.9573, 546, 389, 0, 0, -0.890899, 24.1434, 546, 442, -17.9071, -9.97807, 10.869, -4.00904, 561, 484, 0, 0, 0, 0, 607, 465, 15.6022, -8.53071, -12.1226, -0.224492, 534, 498, 13.694, 0.336739, -31.2044, -18.2961, 461.8, 499, 32.8881, -1.34695, 0, 0, 406.2, 476)
+"points": PackedVector2Array(0, 0, 0, 0, 150, 125.4, -11.0592, -5.98473, 4.01589, 2.77848, 176, 156.4, -9.89949, -0.0707107, 16.6319, 6.56604, 215, 158, -29.2257, -8.91661, 18.1726, -0.282843, 240, 203, 0, 0, 0, 0, 274, 203, -2.54271, -8.6876, 2.54271, 8.6876, 274, 241, -3.60217, -0.847571, 3.60217, 0.847571, 290, 257, -9.32328, -0.211893, 9.32328, 0.211893, 355, 257, -0.211892, -14.8325, -16.1038, -4.44975, 363, 281, 5.50921, -8.47571, -0.423786, 35.8099, 337, 296, 8.26381, -2.22487, 0, 13.879, 308, 322, 0, 0, 2.9665, 11.5481, 308, 374, -19.0703, 0.635678, 7.20435, -0.317839, 340, 390, -13.4552, 0, 8.15787, -1.58919, 452, 390, 0.317839, -15.3622, 34.6444, 2.22487, 461, 421, -7.73408, -2.22487, 11.2303, -0.105946, 499, 390, -7.3103, 0.211893, 0.137427, 20.9573, 546, 389, 0, 0, -0.890899, 24.1434, 546, 442, -17.9071, -9.97807, 10.869, -4.00904, 561, 484, 0, 0, 0, 0, 607, 465, 15.6022, -8.53071, -12.1226, -0.224492, 534, 498, 13.694, 0.336739, -31.2044, -18.2961, 461.8, 499, 32.8881, -1.34695, 0, 0, 406.2, 476)
 }
 point_count = 23
 
@@ -1587,7 +1587,7 @@ position = Vector2(363, 3.8147e-06)
 scale = Vector2(1.6, 1.6)
 sprite_frames = SubResource("SpriteFrames_owqd5")
 autoplay = "default"
-frame_progress = 0.695967
+frame_progress = 0.0508139
 centered = false
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
@@ -1605,6 +1605,15 @@ position = Vector2(-9, -4)
 scale = Vector2(4.86348, 4.86348)
 texture = ExtResource("3_38kj2")
 centered = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BorderLayer/Control"]
+use_parent_material = true
+position = Vector2(190, 105)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_ddhhl")
+autoplay = "default"
+frame_progress = 0.28764
+flip_h = true
 
 [node name="ColorRect" type="ColorRect" parent="BorderLayer/Control"]
 layout_mode = 1
@@ -1636,15 +1645,6 @@ bbcode_enabled = true
 fit_content = true
 scroll_active = false
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BorderLayer/Control"]
-use_parent_material = true
-position = Vector2(190, 105)
-scale = Vector2(5, 5)
-sprite_frames = SubResource("SpriteFrames_ddhhl")
-autoplay = "default"
-frame_progress = 0.390524
-flip_h = true
-
 [node name="RichTextLabel" type="RichTextLabel" parent="BorderLayer/Control"]
 self_modulate = Color(0, 0, 0, 1)
 offset_left = 250.0
@@ -1657,7 +1657,7 @@ text = "x420"
 
 [node name="MapLayer" type="Node2D" parent="."]
 material = ExtResource("4_sleoy")
-position = Vector2(40, -182)
+position = Vector2(210, -15)
 scale = Vector2(5, 5)
 
 [node name="water" type="Sprite2D" parent="MapLayer"]
@@ -1678,12 +1678,12 @@ use_parent_material = true
 texture = ExtResource("7_13wx3")
 centered = false
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MapLayer/map"]
+[node name="Alano" type="AnimatedSprite2D" parent="MapLayer/map"]
 use_parent_material = true
-position = Vector2(335, 239.4)
+position = Vector2(435, 416)
 sprite_frames = SubResource("SpriteFrames_5fcos")
 autoplay = "default"
-frame_progress = 0.564125
+frame_progress = 0.918973
 
 [node name="map_path" type="AnimatedSprite2D" parent="MapLayer"]
 use_parent_material = true
@@ -1696,6 +1696,7 @@ centered = false
 scale = Vector2(1, 1)
 
 [node name="0" type="AnimatedSprite2D" parent="MapLayer/level_nubs"]
+visible = false
 use_parent_material = true
 position = Vector2(185, 158.8)
 scale = Vector2(1, 1)
@@ -1739,7 +1740,7 @@ offset = Vector2(0, -0.4)
 [node name="5" type="AnimatedSprite2D" parent="MapLayer/level_nubs"]
 visible = false
 use_parent_material = true
-position = Vector2(461, 421.8)
+position = Vector2(461, 420.5)
 scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
@@ -1794,7 +1795,7 @@ use_parent_material = true
 position = Vector2(-7.99998, -14)
 sprite_frames = SubResource("SpriteFrames_njguw")
 autoplay = "default"
-frame_progress = 0.471851
+frame_progress = 0.556867
 centered = false
 
 [node name="Camera2D" type="Camera2D" parent="MapLayer/Character/PathFollow2D/SkullKid"]
@@ -1806,6 +1807,7 @@ libraries = {
 }
 
 [node name="map_foreground" type="Sprite2D" parent="MapLayer"]
+visible = false
 use_parent_material = true
 position = Vector2(0, -5.96046e-08)
 texture = ExtResource("9_blng1")
