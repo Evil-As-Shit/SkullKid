@@ -1,8 +1,8 @@
 SendMode Input
 SetWorkingDir %A_ScriptDir%
-Run, C:/SkullKid/Roms/Zelda - A Link to The Past.smc
+Run, C:/SkullKid/Roms/Link's Awakening.gbc
 sleep, 1000
-Send {F1}
+Send {F3}
 sleep, 300
 WinActivate, ahk_exe EmuHawk.exe
 return

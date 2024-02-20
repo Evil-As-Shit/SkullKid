@@ -7,13 +7,13 @@ var text_list = []
 var game_list = []
 var songs_list = []
 var set_list = {}
-var last_rom = ""
-signal next_song_signal
 var temp_list = {}
 var games_order = []
 var songs_order = []
 var set_start = false
 
+var last_rom = ""
+signal next_song_signal
 
 
 func _ready():
@@ -30,10 +30,8 @@ func start_program():
 	temp_list.erase("SongsList")
 	#Set the Set List Up in Order using the ordered r
 	for k in games_order.size():
-#		print(games_order[k])
 		set_list[games_order[k]] = temp_list[games_order[k]]
 		for l in songs_order[k].size():
-#			print(songs_order[k][l])
 			set_list[games_order[k]]["Games"][songs_order[k][l]] = temp_list[games_order[k]]["Games"][songs_order[k][l]]
 
 	#Remove Games not in Set List
@@ -128,18 +126,15 @@ func start_program():
 ##			songs_list[x].append(song)
 ##		x = x + 1
 
-
-
-
 func _input(_event):
 		if(Input.is_action_just_pressed("Next_Song")): # The "p" Button is Pressed *When 'c' is pressed AHK switches to godot and sends the 'p' key.
 			if(set_start == true):
-				if(songs_list[game_num].size()-1 != song_num):
-					song_num = song_num+1
+				if(songs_list[game_num].size() - 1 != song_num):
+					song_num = song_num + 1
 					program()
 					return
 				else:
-					game_num= game_num+ 1
+					game_num = game_num + 1
 					song_num = 0
 					if(game_num> game_list.size()-1):
 						print("game over")

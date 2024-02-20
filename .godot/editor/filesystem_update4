@@ -1,5 +1,8 @@
+res://Scenes/Program.tscn
 res://Scenes/PixelFade.gdshader
 res://Assets/pixelfadeshader.tres
-res://2.0/Scences/Game.tscn
 res://2.0/Scripts/Game_State.gd
+res://2.0/Scences/Game.tscn
+res://2.0/Scences/map.tscn
 res://2.0/Scripts/Global.gd
+res://Godot_Scripts/MainMenu.gd

@@ -4,4 +4,4 @@
 
 [resource]
 shader = ExtResource("1_nhfhv")
-shader_parameter/pixelFactor = 100.0
+shader_parameter/pixelFactor = 1.75
