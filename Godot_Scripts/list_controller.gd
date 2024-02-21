@@ -6,7 +6,7 @@ var start_drop = null
 var end_drop = null
 var games_order = []
 var songs_order = []
-
+@export var font : FontFile
 func _ready():
 	reload_setlist()
 
@@ -31,7 +31,7 @@ func reload_setlist():
 	for k in games_order.size():
 		var game = list.create_item(root)
 		game.set_text(0,games_order[k])
-#		game.set_text(1,str(set_list[games_order[k]]["In_Set"]))
+		game.set_custom_font(0,font)
 		game.set_cell_mode(1, game.CELL_MODE_CHECK)
 		game.set_checked(1,set_list[games_order[k]]["In_Set"])
 		game.set_editable(1, true)
@@ -40,6 +40,7 @@ func reload_setlist():
 		for l in songs_order[k].size():
 			var song = list.create_item(game)
 			song.set_text(0,songs_order[k][l])
+			song.set_custom_font(0,font)
 #			song.set_text(1,str(set_list[games_order[k]]["Games"][songs_order[k][l]]["In_Set"]))
 			song.set_cell_mode(1,song.CELL_MODE_CHECK)
 			song.set_checked(1,set_list[games_order[k]]["Games"][songs_order[k][l]]["In_Set"])

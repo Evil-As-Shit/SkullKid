@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://Godot_Scripts/MainMenu.gd" id="1_3u0t1"]
 [ext_resource type="Texture2D" uid="uid://dys1ppanqh0bn" path="res://Assets/icons/SK_Icon_Inverted.png" id="2_8b4dj"]
-[ext_resource type="Script" path="res://Godot_Scripts/list_controller.gd" id="3_334db"]
 [ext_resource type="Texture2D" uid="uid://ndwxfqde0cqu" path="res://Assets/icons/SkullKid64_Transparent.png" id="5_8eciv"]
 [ext_resource type="Material" uid="uid://bv64bmjb2tc7x" path="res://Assets/pixelfadeshader.tres" id="6_byjc8"]
 [ext_resource type="Texture2D" uid="uid://balymvkqlrd4a" path="res://Assets/icons/SkullKid64.png" id="6_u72o4"]
 [ext_resource type="Script" path="res://Scenes/HSlider.gd" id="7_p6thy"]
+[ext_resource type="PackedScene" uid="uid://dndp3bh21id4v" path="res://2.0/Scences/SetListEditor.tscn" id="8_5mk7r"]
 [ext_resource type="PackedScene" uid="uid://dq7ei0npge0kj" path="res://2.0/Scences/map.tscn" id="10_20x5o"]
 [ext_resource type="Texture2D" uid="uid://cnadxupix736u" path="res://Assets/Boarder.png" id="11_ah1ah"]
 [ext_resource type="FontFile" uid="uid://b6x221cxlxdrh" path="res://Assets/Map/Super-Mario-World.ttf" id="16_u03ln"]
@@ -1278,30 +1278,7 @@ shortcut_feedback = false
 shortcut_in_tooltip = false
 flat = true
 
-[node name="Control2" type="Control" parent="CanvasLayer"]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_left = 436.0
-offset_top = 189.0
-offset_right = 476.0
-offset_bottom = 229.0
-script = ExtResource("3_334db")
-
-[node name="Tree" type="Tree" parent="CanvasLayer/Control2"]
-layout_mode = 0
-offset_left = -336.0
-offset_top = 8.0
-offset_right = 99.0
-offset_bottom = 733.0
-
-[node name="Button" type="Button" parent="CanvasLayer/Control2"]
-layout_mode = 0
-offset_left = -9.0
-offset_top = 695.0
-offset_right = 87.0
-offset_bottom = 726.0
-text = "Save Setlist"
+[node name="Control2" parent="CanvasLayer" instance=ExtResource("8_5mk7r")]
 
 [node name="Main_Menu" type="CanvasLayer" parent="."]
 
@@ -1331,7 +1308,4 @@ region_rect = Rect2(379, 226, 2791, 668)
 
 [connection signal="value_changed" from="CanvasLayer/HSlider" to="CanvasLayer/HSlider" method="_on_value_changed"]
 [connection signal="pressed" from="CanvasLayer/CheckButton" to="." method="_on_check_button_pressed"]
-[connection signal="gui_input" from="CanvasLayer/Control2" to="CanvasLayer/Control2" method="_on_gui_input"]
-[connection signal="item_mouse_selected" from="CanvasLayer/Control2/Tree" to="CanvasLayer/Control2" method="_on_tree_item_mouse_selected"]
-[connection signal="pressed" from="CanvasLayer/Control2/Button" to="CanvasLayer/Control2" method="_on_button_pressed"]
 [connection signal="pressed" from="Main_Menu/Button" to="." method="_on_button_pressed"]

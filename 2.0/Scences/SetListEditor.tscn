@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://dndp3bh21id4v"]
+
+[ext_resource type="Script" path="res://Godot_Scripts/list_controller.gd" id="1_lpact"]
+[ext_resource type="FontFile" uid="uid://b6x221cxlxdrh" path="res://Assets/Map/Super-Mario-World.ttf" id="2_ffoah"]
+
+[node name="Control2" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 436.0
+offset_top = 189.0
+offset_right = 476.0
+offset_bottom = 229.0
+script = ExtResource("1_lpact")
+font = ExtResource("2_ffoah")
+
+[node name="Tree" type="Tree" parent="."]
+layout_mode = 0
+offset_left = -336.0
+offset_top = 8.0
+offset_right = 99.0
+offset_bottom = 733.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -67.0
+offset_top = 694.0
+offset_right = 93.0
+offset_bottom = 725.0
+theme_override_fonts/font = ExtResource("2_ffoah")
+text = "Save Setlist"
+
+[connection signal="item_mouse_selected" from="Tree" to="." method="_on_tree_item_mouse_selected"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

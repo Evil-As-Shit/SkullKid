@@ -1,9 +1,9 @@
 [gd_scene load_steps=205 format=3 uid="uid://bv2r7csuhfiok"]
 
-[ext_resource type="Script" path="res://2.0/Scripts/Global.gd" id="1_awt0s"]
 [ext_resource type="Script" path="res://2.0/Scripts/Game_State.gd" id="2_u4c6k"]
 [ext_resource type="Texture2D" uid="uid://cnadxupix736u" path="res://Assets/Boarder.png" id="3_38kj2"]
 [ext_resource type="Material" uid="uid://bv64bmjb2tc7x" path="res://Assets/pixelfadeshader.tres" id="4_sleoy"]
+[ext_resource type="PackedScene" uid="uid://dndp3bh21id4v" path="res://2.0/Scences/SetListEditor.tscn" id="4_v82cf"]
 [ext_resource type="Texture2D" uid="uid://bjdidvigy2myl" path="res://Assets/SKTitleScreen.png" id="4_ydgyx"]
 [ext_resource type="Texture2D" uid="uid://cn75g8j5evndk" path="res://Assets/Map/TacomaMarioWorldMap1_WaterLayer.png" id="5_wmcry"]
 [ext_resource type="FontFile" uid="uid://b6x221cxlxdrh" path="res://Assets/Map/Super-Mario-World.ttf" id="6_jxu4g"]
@@ -1365,21 +1365,6 @@ tracks/0/keys = {
 "values": [0.0, 50.0]
 }
 
-[sub_resource type="Animation" id="Animation_qaka6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:progress")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="Animation" id="Animation_311x1"]
 resource_name = "1"
 length = 2.0
@@ -1524,6 +1509,21 @@ tracks/0/keys = {
 "values": [896.0, 1111.0]
 }
 
+[sub_resource type="Animation" id="Animation_qaka6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u7teu"]
 _data = {
 "0": SubResource("Animation_4uwm7"),
@@ -1541,10 +1541,7 @@ _data = {
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Global" type="Node" parent="."]
-script = ExtResource("1_awt0s")
-
-[node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "debug_label")]
+[node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "debug_label", "set_list_controller")]
 script = ExtResource("2_u4c6k")
 border_layer = NodePath("../BorderLayer")
 map_layer = NodePath("../MapLayer")
@@ -1555,23 +1552,7 @@ char_mover = NodePath("../MapLayer/Character/PathFollow2D/char_mover")
 level_nubs = NodePath("../MapLayer/level_nubs")
 text_label = NodePath("../BorderLayer/Control/game_name")
 debug_label = NodePath("../debug/RichTextLabel")
-
-[node name="debug" type="CanvasLayer" parent="."]
-
-[node name="RichTextLabel" type="RichTextLabel" parent="debug"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -690.0
-offset_top = -205.0
-offset_right = 715.0
-offset_bottom = 125.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/normal_font = ExtResource("6_jxu4g")
-theme_override_font_sizes/normal_font_size = 90
+set_list_controller = NodePath("../debug/SetList")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
 visible = false
@@ -1587,10 +1568,11 @@ position = Vector2(363, 3.8147e-06)
 scale = Vector2(1.6, 1.6)
 sprite_frames = SubResource("SpriteFrames_owqd5")
 autoplay = "default"
-frame_progress = 0.0508139
+frame_progress = 0.714644
 centered = false
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
@@ -1647,6 +1629,7 @@ scroll_active = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="BorderLayer/Control"]
 self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
 offset_left = 250.0
 offset_top = 125.0
 offset_right = 545.0
@@ -1693,13 +1676,11 @@ animation = &"1"
 centered = false
 
 [node name="level_nubs" type="Node2D" parent="MapLayer"]
-scale = Vector2(1, 1)
 
 [node name="0" type="AnimatedSprite2D" parent="MapLayer/level_nubs"]
 visible = false
 use_parent_material = true
 position = Vector2(185, 158.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 animation = &"appear"
 offset = Vector2(0, -0.4)
@@ -1708,7 +1689,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(274, 203.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 animation = &"appear"
 offset = Vector2(0, -0.4)
@@ -1717,7 +1697,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(363, 282.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1725,7 +1704,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(308, 322.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1733,7 +1711,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(340, 390.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1741,7 +1718,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(461, 420.5)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1749,7 +1725,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(546, 390.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1757,7 +1732,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(546, 442.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1765,7 +1739,6 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(607, 465.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 offset = Vector2(0, -0.4)
 
@@ -1773,14 +1746,12 @@ offset = Vector2(0, -0.4)
 visible = false
 use_parent_material = true
 position = Vector2(406, 476.8)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_22ssi")
 animation = &"appear"
 offset = Vector2(0, -0.4)
 
 [node name="Character" type="Path2D" parent="MapLayer"]
 use_parent_material = true
-scale = Vector2(1, 1)
 curve = SubResource("Curve2D_kv2y4")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="MapLayer/Character"]
@@ -1807,8 +1778,28 @@ libraries = {
 }
 
 [node name="map_foreground" type="Sprite2D" parent="MapLayer"]
-visible = false
 use_parent_material = true
 position = Vector2(0, -5.96046e-08)
 texture = ExtResource("9_blng1")
 centered = false
+
+[node name="debug" type="CanvasLayer" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="debug"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -690.0
+offset_top = -205.0
+offset_right = 715.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("6_jxu4g")
+theme_override_font_sizes/normal_font_size = 90
+
+[node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
+visible = false

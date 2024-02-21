@@ -104,10 +104,10 @@
 		"Banjo-Kazooie",
 		"Pokemon",
 		"Metroid",
-		"Mario",
 		"Luigi's Mansion",
 		"Donkey Kong Country",
 		"Megaman 3",
+		"Mario",
 		"Duck Tales",
 		"Karnov",
 		"Magic Kingdom",
@@ -420,16 +420,6 @@
 		],
 		[
 			"Title",
-			"SMB3 - Overworld",
-			"Mario Land",
-			"Dr. Mario",
-			"Mario World",
-			"Mario Kart 64",
-			"Mario Sunshine",
-			"Mario Ending"
-		],
-		[
-			"Title",
 			"Theme"
 		],
 		[
@@ -445,6 +435,16 @@
 			"Topman",
 			"Sparkman",
 			"Boss Theme"
+		],
+		[
+			"Title",
+			"SMB3 - Overworld",
+			"Mario Land",
+			"Dr. Mario",
+			"Mario World",
+			"Mario Kart 64",
+			"Mario Sunshine",
+			"Mario Ending"
 		],
 		[
 			"Title",

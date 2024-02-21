@@ -9,6 +9,8 @@ extends Node
 @export var level_nubs : Node2D
 @export var text_label : RichTextLabel
 @export var debug_label : RichTextLabel
+@export var set_list_controller : Control
+
 var game_num= 0   #game number
 var song_num = 0   #song number
 var text_list = []
@@ -19,6 +21,7 @@ var temp_list = {}
 var games_order = []
 var songs_order = []
 var set_start = false
+var level_offset = 0
 
 enum STATE {START, MAP, GAME}
 
@@ -29,7 +32,6 @@ func set_current_state(new_state):
 		return
 	match(new_state):
 		STATE.START:
-			OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Song_Controller.bat",[])
 			map_layer.hide()
 			border_layer.hide()
 			start_layer.show()
@@ -40,16 +42,16 @@ func set_current_state(new_state):
 			border_layer.show()
 			pixel_fade.play_backwards("Pixel_Fade")
 			await pixel_fade.animation_finished
-			map_path.play(str(game_num))
+			map_path.play(str(game_num + level_offset))
 			await map_path.animation_finished
 			print("path updated")
-			var nubby = level_nubs.get_node(str(game_num))
+			var nubby = level_nubs.get_node(str(game_num+level_offset))
 			nubby.show()
 			nubby.play("appear")
 			await nubby.animation_finished
 			print("nubby appeared")
 			nubby.play("default")
-			char_mover.play(str(game_num))
+			char_mover.play(str(game_num+level_offset))
 			await char_mover.animation_finished
 			print("char move updated")
 			text_label.clear()
@@ -66,6 +68,11 @@ func set_current_state(new_state):
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit()
+	if event.is_action_pressed("Set_List"):
+		if set_list_controller.is_visible():
+			set_list_controller.hide()
+		else:
+			set_list_controller.show()
 
 	if event.is_action_pressed("Next_Song"):
 		if current_state == STATE.GAME:
@@ -99,6 +106,7 @@ func _input(event):
 		if current_state == STATE.START:
 			start_layer.hide()
 			load_setlist()
+
 			current_state = STATE.MAP
 
 	if event.is_action_pressed("Previous_Song"):
@@ -114,6 +122,7 @@ func the_program():
 
 
 func _ready():
+	OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Song_Controller.bat",[])
 	current_state = STATE.START
 
 func load_JSON(path):
@@ -159,4 +168,9 @@ func load_setlist():
 
 	game_list = games_order
 	songs_list = songs_order
-
+	#Initialize Skull Kid Starting Level if less than 10 games
+	level_offset = abs(game_list.size()-10)
+	map_path.play(str(level_offset))
+	map_path.stop()
+	char_mover.play(str(level_offset))
+	char_mover.stop()
