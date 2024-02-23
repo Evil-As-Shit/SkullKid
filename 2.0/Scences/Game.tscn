@@ -92,6 +92,7 @@ animations = [{
 [sub_resource type="Animation" id="Animation_mjc37"]
 resource_name = "Pixel_Fade"
 length = 3.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -99,7 +100,7 @@ tracks/0/path = NodePath(".:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(1.6, 2.5),
+"times": PackedFloat32Array(1.7, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
@@ -114,7 +115,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 1, 2.5),
 "transitions": PackedFloat32Array(1e+06, 1, 1),
 "update": 0,
-"values": [100.0, 2.1, 0.35]
+"values": [100.0, 2.1, 0.1]
 }
 
 [sub_resource type="Animation" id="Animation_g0wsp"]
@@ -1572,7 +1573,6 @@ frame_progress = 0.714644
 centered = false
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
@@ -1588,13 +1588,13 @@ scale = Vector2(4.86348, 4.86348)
 texture = ExtResource("3_38kj2")
 centered = false
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BorderLayer/Control"]
+[node name="SkullKidSprite" type="AnimatedSprite2D" parent="BorderLayer/Control"]
 use_parent_material = true
 position = Vector2(190, 105)
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_ddhhl")
 autoplay = "default"
-frame_progress = 0.28764
+frame_progress = 0.798474
 flip_h = true
 
 [node name="ColorRect" type="ColorRect" parent="BorderLayer/Control"]
