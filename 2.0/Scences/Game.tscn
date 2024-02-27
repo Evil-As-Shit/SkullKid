@@ -92,7 +92,6 @@ animations = [{
 [sub_resource type="Animation" id="Animation_mjc37"]
 resource_name = "Pixel_Fade"
 length = 3.0
-loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1542,7 +1541,7 @@ _data = {
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "debug_label", "set_list_controller")]
+[node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "debug_label", "set_list_controller", "music_player")]
 script = ExtResource("2_u4c6k")
 border_layer = NodePath("../BorderLayer")
 map_layer = NodePath("../MapLayer")
@@ -1554,6 +1553,7 @@ level_nubs = NodePath("../MapLayer/level_nubs")
 text_label = NodePath("../BorderLayer/Control/game_name")
 debug_label = NodePath("../debug/RichTextLabel")
 set_list_controller = NodePath("../debug/SetList")
+music_player = NodePath("../debug/AudioStreamPlayer")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
 visible = false
@@ -1803,3 +1803,5 @@ theme_override_font_sizes/normal_font_size = 90
 
 [node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
 visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="debug"]

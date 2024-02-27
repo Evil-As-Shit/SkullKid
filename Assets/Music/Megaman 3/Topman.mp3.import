@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bn216u7gd4rcy"
+path="res://.godot/imported/Topman.mp3-f574e3248fadec868c69468d516e0325.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Megaman 3/Topman.mp3"
+dest_files=["res://.godot/imported/Topman.mp3-f574e3248fadec868c69468d516e0325.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g74iiu0k7ut8"
+path="res://.godot/imported/Lavender Town.mp3-dd7f5042f538afab2bd080b746fe5669.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Pokemon/Lavender Town.mp3"
+dest_files=["res://.godot/imported/Lavender Town.mp3-dd7f5042f538afab2bd080b746fe5669.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

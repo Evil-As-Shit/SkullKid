@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m6rxebmg4my3"
+path="res://.godot/imported/Treasure Trove Cove.mp3-f8beb195cba03f53e4a0f4393e70b837.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Banjo-Kazooie/Treasure Trove Cove.mp3"
+dest_files=["res://.godot/imported/Treasure Trove Cove.mp3-f8beb195cba03f53e4a0f4393e70b837.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

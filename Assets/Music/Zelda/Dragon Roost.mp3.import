@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://gwwfkvca61ku"
+path="res://.godot/imported/Dragon Roost.mp3-536495bd6483c76bdb2bc5ca4513e7eb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Zelda/Dragon Roost.mp3"
+dest_files=["res://.godot/imported/Dragon Roost.mp3-536495bd6483c76bdb2bc5ca4513e7eb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cg8whms0ecyxg"
+path="res://.godot/imported/Gang Plank Galleon.mp3-174d579e03024c601f07dad8d1214dd4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Donkey Kong Contry/Gang Plank Galleon.mp3"
+dest_files=["res://.godot/imported/Gang Plank Galleon.mp3-174d579e03024c601f07dad8d1214dd4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

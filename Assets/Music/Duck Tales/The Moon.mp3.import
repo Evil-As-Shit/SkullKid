@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cyi0btyo6b2gf"
+path="res://.godot/imported/The Moon.mp3-30348805ebe35d76afacf20dc4a0e10d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Duck Tales/The Moon.mp3"
+dest_files=["res://.godot/imported/The Moon.mp3-30348805ebe35d76afacf20dc4a0e10d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcmn1w4fi0ae1"
+path="res://.godot/imported/Theme.mp3-a11ed5b250444fc5131af31fd042ca95.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Luigi's Mansion/Theme.mp3"
+dest_files=["res://.godot/imported/Theme.mp3-a11ed5b250444fc5131af31fd042ca95.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

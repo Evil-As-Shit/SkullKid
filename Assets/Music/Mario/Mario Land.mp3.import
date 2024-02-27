@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cabbrygfcgbrf"
+path="res://.godot/imported/Mario Land.mp3-5afffb8d2d7f06cc2c70376fd625ad50.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Mario/Mario Land.mp3"
+dest_files=["res://.godot/imported/Mario Land.mp3-5afffb8d2d7f06cc2c70376fd625ad50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

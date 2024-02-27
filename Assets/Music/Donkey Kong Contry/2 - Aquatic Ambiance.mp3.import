@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxk3y8q3v20co"
+path="res://.godot/imported/2 - Aquatic Ambiance.mp3-44643d76b96065bb0bf9af5e53a3d02d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Donkey Kong Contry/2 - Aquatic Ambiance.mp3"
+dest_files=["res://.godot/imported/2 - Aquatic Ambiance.mp3-44643d76b96065bb0bf9af5e53a3d02d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

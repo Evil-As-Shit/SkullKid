@@ -10,7 +10,7 @@ extends Node
 @export var text_label : RichTextLabel
 @export var debug_label : RichTextLabel
 @export var set_list_controller : Control
-
+@export var music_player : AudioStreamPlayer
 var game_num= 0   #game number
 var song_num = 0   #song number
 var text_list = []
@@ -22,6 +22,7 @@ var games_order = []
 var songs_order = []
 var set_start = false
 var level_offset = 0
+var loaded_mp3 : AudioStream = null
 
 enum STATE {START, MAP, GAME}
 
@@ -106,19 +107,38 @@ func _input(event):
 		if current_state == STATE.START:
 			start_layer.hide()
 			load_setlist()
-
 			current_state = STATE.MAP
+			set_process_input(false)
 
 	if event.is_action_pressed("Previous_Song"):
-		pass
-
+		if(song_num != 0):
+			song_num = song_num-1
+		else:
+			game_num= game_num- 1
+			song_num = songs_list[game_num].size()-1
+		the_program()
+	
+	if event.is_action_pressed("Restart_Song"):
+		print("restarting song")
+		if(set_list[game_list[game_num]]["Games"][songs_list[game_num][song_num]]["Rom"].get_extension() != ".iso"):
+			OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
+#		OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Game_Loader.bat",[])
 
 func the_program():
 	debug_label.show()
 	debug_label.clear()
 	debug_label.append_text("[center]%s[/center]" % game_list[game_num].to_upper() + "\n[center]%s[/center]" % songs_list[game_num][song_num].to_upper())
+	var file = "res://Assets/Music/"+str(game_list[game_num])+"/"+str(songs_list[game_num][song_num])+".mp3"
+	music_player.set_stream(load_mp3(file))
+	music_player.play()
 	print(game_list[game_num]," - ",songs_list[game_num][song_num])
 
+func load_mp3(path:String):
+	var file = FileAccess.open(path, FileAccess.READ)
+	if file != null:
+		var music = AudioStreamMP3.new()
+		music.data = file.get_buffer(file.get_length())
+		return music
 
 
 func _ready():

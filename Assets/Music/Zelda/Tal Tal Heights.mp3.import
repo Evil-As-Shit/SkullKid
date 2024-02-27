@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwlo7puoseypg"
+path="res://.godot/imported/Tal Tal Heights.mp3-b8cac59c76200844ad6c5576d2956126.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Zelda/Tal Tal Heights.mp3"
+dest_files=["res://.godot/imported/Tal Tal Heights.mp3-b8cac59c76200844ad6c5576d2956126.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

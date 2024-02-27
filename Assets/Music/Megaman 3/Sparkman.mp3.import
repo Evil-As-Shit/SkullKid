@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://keacafvf4umu"
+path="res://.godot/imported/Sparkman.mp3-8c1f57b12dbfb2123296c51106ddf92d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Megaman 3/Sparkman.mp3"
+dest_files=["res://.godot/imported/Sparkman.mp3-8c1f57b12dbfb2123296c51106ddf92d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

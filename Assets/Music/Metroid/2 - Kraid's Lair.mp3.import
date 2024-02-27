@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkhjg2wwsmemn"
+path="res://.godot/imported/2 - Kraid's Lair.mp3-ac7aed4d99ff690e7f4a215b84693451.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Metroid/2 - Kraid's Lair.mp3"
+dest_files=["res://.godot/imported/2 - Kraid's Lair.mp3-ac7aed4d99ff690e7f4a215b84693451.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
