@@ -1,5 +1,6 @@
-AudioStreamPlayer
 RichTextLabel
+CheckButton
+AudioStreamPlayer
 CanvasLayer
 AnimatedSprite2D
 TextEdit
@@ -15,7 +16,6 @@ SubViewportContainer
 TileMap
 PathFollow2D
 Path2D
-CheckButton
 Tree
 Button
 VBoxContainer

@@ -8,7 +8,7 @@ extends Node
 @export var char_mover : AnimationPlayer
 @export var level_nubs : Node2D
 @export var text_label : RichTextLabel
-@export var debug_label : RichTextLabel
+@export var practice_label : RichTextLabel
 @export var set_list_controller : Control
 @export var music_player : AudioStreamPlayer
 var game_num= 0   #game number
@@ -23,7 +23,7 @@ var songs_order = []
 var set_start = false
 var level_offset = 0
 var loaded_mp3 : AudioStream = null
-
+var practice_mode = false
 enum STATE {START, MAP, GAME}
 
 var current_state : set = set_current_state
@@ -38,26 +38,26 @@ func set_current_state(new_state):
 			start_layer.show()
 #			get_tree().get_root().set_transparent_background(false)
 		STATE.MAP:
-			debug_label.hide()
-			map_layer.show()
-			border_layer.show()
-			pixel_fade.play_backwards("Pixel_Fade")
-			await pixel_fade.animation_finished
-			map_path.play(str(game_num + level_offset))
-			await map_path.animation_finished
-			print("path updated")
-			var nubby = level_nubs.get_node(str(game_num+level_offset))
-			nubby.show()
-			nubby.play("appear")
-			await nubby.animation_finished
-			print("nubby appeared")
-			nubby.play("default")
-			char_mover.play(str(game_num+level_offset))
-			await char_mover.animation_finished
-			print("char move updated")
-			text_label.clear()
-			text_label.set_text("[center]%s[/center]" % game_list[game_num].to_upper())
-			text_label.show()
+			if practice_mode == false:
+				map_layer.show()
+				border_layer.show()
+				pixel_fade.play_backwards("Pixel_Fade")
+				await pixel_fade.animation_finished
+				map_path.play(str(game_num + level_offset))
+				await map_path.animation_finished
+				print("path updated")
+				var nubby = level_nubs.get_node(str(game_num+level_offset))
+				nubby.show()
+				nubby.play("appear")
+				await nubby.animation_finished
+				print("nubby appeared")
+				nubby.play("default")
+				char_mover.play(str(game_num+level_offset))
+				await char_mover.animation_finished
+				print("char move updated")
+				text_label.clear()
+				text_label.set_text("[center]%s[/center]" % game_list[game_num].to_upper())
+				text_label.show()
 			set_process_input(true)
 		STATE.GAME:
 			map_layer.hide()
@@ -72,6 +72,7 @@ func _input(event):
 	if event.is_action_pressed("Set_List"):
 		if set_list_controller.is_visible():
 			set_list_controller.hide()
+			
 		else:
 			set_list_controller.show()
 
@@ -96,19 +97,21 @@ func _input(event):
 					current_state = STATE.MAP
 
 		if current_state == STATE.MAP:
-			set_process_input(false)
-			text_label.hide()
-			pixel_fade.play("Pixel_Fade")
-			await pixel_fade.animation_finished
-			print("finished fade")
-			set_process_input(true)
+			if practice_mode == false:
+				set_process_input(false)
+				text_label.hide()
+				pixel_fade.play("Pixel_Fade")
+				await pixel_fade.animation_finished
+				print("finished fade")
+				set_process_input(true)
 			current_state = STATE.GAME
 
 		if current_state == STATE.START:
 			start_layer.hide()
 			load_setlist()
 			current_state = STATE.MAP
-			set_process_input(false)
+			if practice_mode == false:
+				set_process_input(false)
 
 	if event.is_action_pressed("Previous_Song"):
 		if(song_num != 0):
@@ -120,17 +123,21 @@ func _input(event):
 	
 	if event.is_action_pressed("Restart_Song"):
 		print("restarting song")
-		if(set_list[game_list[game_num]]["Games"][songs_list[game_num][song_num]]["Rom"].get_extension() != ".iso"):
-			OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
-#		OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Game_Loader.bat",[])
+		if practice_mode == false:
+			pass
+	#		if(set_list[game_list[game_num]]["Games"][songs_list[game_num][song_num]]["Rom"].get_extension() != ".iso"):
+	#			OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
+	#		OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Game_Loader.bat",[])
+		the_program()
 
 func the_program():
-	debug_label.show()
-	debug_label.clear()
-	debug_label.append_text("[center]%s[/center]" % game_list[game_num].to_upper() + "\n[center]%s[/center]" % songs_list[game_num][song_num].to_upper())
-	var file = "res://Assets/Music/"+str(game_list[game_num])+"/"+str(songs_list[game_num][song_num])+".mp3"
-	music_player.set_stream(load_mp3(file))
-	music_player.play()
+	if practice_mode == true:
+		practice_label.show()
+		practice_label.clear()
+		practice_label.append_text("[center]%s[/center]" % game_list[game_num].to_upper() + "\n[center]%s[/center]" % songs_list[game_num][song_num].to_upper())
+		var file = "res://Assets/Music/"+str(game_list[game_num])+"/"+str(songs_list[game_num][song_num])+".mp3"
+		music_player.set_stream(load_mp3(file))
+		music_player.play()
 	print(game_list[game_num]," - ",songs_list[game_num][song_num])
 
 func load_mp3(path:String):
@@ -139,7 +146,6 @@ func load_mp3(path:String):
 		var music = AudioStreamMP3.new()
 		music.data = file.get_buffer(file.get_length())
 		return music
-
 
 func _ready():
 	OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Song_Controller.bat",[])
@@ -194,3 +200,12 @@ func load_setlist():
 	map_path.stop()
 	char_mover.play(str(level_offset))
 	char_mover.stop()
+
+
+func _on_check_button_toggled(button_pressed):
+	if practice_mode == false:
+		practice_mode = true
+		practice_label.show()
+	else:
+		practice_mode = false
+		practice_label.hide()

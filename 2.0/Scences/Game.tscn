@@ -1541,7 +1541,7 @@ _data = {
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "debug_label", "set_list_controller", "music_player")]
+[node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "practice_label", "set_list_controller", "music_player")]
 script = ExtResource("2_u4c6k")
 border_layer = NodePath("../BorderLayer")
 map_layer = NodePath("../MapLayer")
@@ -1551,7 +1551,7 @@ map_path = NodePath("../MapLayer/map_path")
 char_mover = NodePath("../MapLayer/Character/PathFollow2D/char_mover")
 level_nubs = NodePath("../MapLayer/level_nubs")
 text_label = NodePath("../BorderLayer/Control/game_name")
-debug_label = NodePath("../debug/RichTextLabel")
+practice_label = NodePath("../debug/Practice_Label")
 set_list_controller = NodePath("../debug/SetList")
 music_player = NodePath("../debug/AudioStreamPlayer")
 
@@ -1627,7 +1627,7 @@ bbcode_enabled = true
 fit_content = true
 scroll_active = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="BorderLayer/Control"]
+[node name="x420" type="RichTextLabel" parent="BorderLayer/Control"]
 self_modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 250.0
@@ -1785,7 +1785,7 @@ centered = false
 
 [node name="debug" type="CanvasLayer" parent="."]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="debug"]
+[node name="Practice_Label" type="RichTextLabel" parent="debug"]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -1804,4 +1804,23 @@ theme_override_font_sizes/normal_font_size = 90
 [node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
 visible = false
 
+[node name="CheckButton" type="CheckButton" parent="debug/SetList"]
+offset_left = -55.0
+offset_top = -172.0
+offset_right = -11.0
+offset_bottom = -148.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="debug/SetList/CheckButton"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = -3.0
+offset_right = 407.0
+offset_bottom = 40.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_jxu4g")
+theme_override_font_sizes/normal_font_size = 32
+text = "Practice Mode"
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="debug"]
+
+[connection signal="toggled" from="debug/SetList/CheckButton" to="Game_Controller" method="_on_check_button_toggled"]
