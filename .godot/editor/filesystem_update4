@@ -3,3 +3,4 @@ res://Scenes/PixelFade.gdshader
 res://Assets/pixelfadeshader.tres
 res://2.0/Scences/SetListEditor.tscn
 res://2.0/Scripts/Game_State.gd
+res://Godot_Scripts/Set_List.json
