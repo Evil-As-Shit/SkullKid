@@ -1830,7 +1830,7 @@ char_mover = NodePath("../MapLayer/Character/PathFollow2D/char_mover")
 level_nubs = NodePath("../MapLayer/level_nubs")
 text_label = NodePath("../BorderLayer/Control/game_name")
 practice_label = NodePath("../debug/Practice_Label")
-set_list_controller = NodePath("../debug/SetList")
+set_list_controller = NodePath("../debug")
 music_player = NodePath("../debug/AudioStreamPlayer")
 intro_animation = NodePath("../StartLayer/Control/skullkid/intro_animation")
 
@@ -2135,6 +2135,7 @@ texture = ExtResource("9_blng1")
 centered = false
 
 [node name="debug" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Practice_Label" type="RichTextLabel" parent="debug"]
 anchors_preset = 8
@@ -2152,14 +2153,13 @@ theme_override_fonts/normal_font = ExtResource("6_jxu4g")
 theme_override_font_sizes/normal_font_size = 90
 
 [node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
-visible = false
 
 [node name="CheckButton" type="CheckButton" parent="debug/SetList"]
 layout_mode = 0
-offset_left = -55.0
-offset_top = -172.0
-offset_right = -11.0
-offset_bottom = -148.0
+offset_left = 21.0
+offset_top = -51.0
+offset_right = 65.0
+offset_bottom = -27.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="debug/SetList/CheckButton"]
 layout_mode = 0

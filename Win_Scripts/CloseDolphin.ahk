@@ -2,16 +2,7 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-;IfWinNotExist, ahk_exe Dolphin.exe
-;{
-;	Run C:\SkullKid\Dolphin\Dolphin.exe
-;	WinWaitActive, ahk_exe Dolphin.exe
-;
-;	WinSet, AlwaysOnTop, On, SkullKidGame (DEBUG)
-;	WinActivate, SkullKidGame (DEBUG)
-;	WinWaitActive, SkullKidGame (DEBUG)
-;}
-Send, {ESC}
+
 WinClose, ahk_exe Dolphin.exe
 WinClose, ahk_exe Dolphin.exe
 return

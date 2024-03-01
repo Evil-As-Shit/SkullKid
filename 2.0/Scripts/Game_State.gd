@@ -9,9 +9,10 @@ extends Node
 @export var level_nubs : Node2D
 @export var text_label : RichTextLabel
 @export var practice_label : RichTextLabel
-@export var set_list_controller : Control
+@export var set_list_controller : CanvasLayer
 @export var music_player : AudioStreamPlayer
 @export var intro_animation : AnimationPlayer
+
 var curtain_down : bool = true
 var game_num= 0   #game number
 var song_num = 0   #song number
@@ -27,6 +28,7 @@ var level_offset = 0
 var loaded_mp3 : AudioStream = null
 var practice_mode = false
 var music_position : float
+var last_rom : String = ""
 enum STATE {START, MAP, GAME}
 
 var current_state : set = set_current_state
@@ -42,6 +44,7 @@ func set_current_state(new_state):
 #			get_tree().get_root().set_transparent_background(false)
 		STATE.MAP:
 			if practice_mode == false:
+				OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
 				map_layer.show()
 				border_layer.show()
 				pixel_fade.play_backwards("Pixel_Fade")
@@ -155,7 +158,15 @@ func the_program():
 		var file = "res://Assets/Music/"+str(game_list[game_num])+"/"+str(songs_list[game_num][song_num])+".mp3"
 		music_player.set_stream(load_mp3(file))
 		music_player.play()
-	print(game_list[game_num]," - ",songs_list[game_num][song_num])
+	else:
+		var rom = set_list[game_list[game_num]]["Games"][songs_list[game_num][song_num]]["Rom"]
+		var state = set_list[game_list[game_num]]["Games"][songs_list[game_num][song_num]]["State"]
+		if(last_rom.get_extension() == "iso" and last_rom != rom):
+			print("closing")
+			OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
+		print(game_list[game_num]," - ",songs_list[game_num][song_num])
+		load_bat(rom,state)
+		OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Game_Loader.bat",[])
 
 func load_mp3(path:String):
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -175,7 +186,26 @@ func load_JSON(path):
 	json.parse(text)
 	var target = json.get_data()
 	return target
-
+	
+func load_bat(rom,f_key):
+	var file = FileAccess.open("C:/SkullKid/SkullKidGame/Win_Scripts/GameLoader.ahk",FileAccess.WRITE)
+	print(rom.get_extension())
+	if(last_rom == rom):
+		print("same rom")
+		if(rom.get_extension() == "iso"):
+			file.store_string("SendMode Input\nSetWorkingDir %A_ScriptDir%\nSend, {F"+str(f_key)+" down}\nsleep 10\nSend, {F"+str(f_key)+" up}\nWinActivate, ahk_exe Dolphin.exe\nreturn")
+		else:
+			file.store_string("SendMode Input\nSetWorkingDir %A_ScriptDir%\nSend {F"+str(f_key)+"}\nSleep,200\nWinActivate, ahk_exe EmuHawk.exe\nreturn")
+	else:
+		if(rom.get_extension() == "iso"):
+			file.store_string("SendMode Input\nSetWorkingDir %A_ScriptDir%\nRun, C:/SkullKid/Roms/"+rom+",,Min\nWinWaitActive, ahk_exe Dolphin.exe\nsleep, 1000\nSend, {F"+str(f_key)+" down}\nsleep 10\nSend, {F"+str(f_key)+" up}\nreturn")
+#			file.store_string("SendMode Input\nSetWorkingDir %A_ScriptDir%\nRun, C:/SkullKid/Roms/"+rom+"\nWinWaitActive, Dolphin 5.0-16627 | JIT64 DC\nSend, {F"+str(f_key)+" down}\nsleep 10\nSend, {F"+str(f_key)+" up}\nWinSet, AlwaysOnTop, On, Dolphin 5.0-16627 | JIT64 DC\nWinActivate, Dolphin 5.0-16627 | JIT64 DC\nreturn")
+		elif(rom.get_extension() == "v64" or rom.get_extension() == "z64"):
+			file.store_string("SendMode Input\nSetWorkingDir %A_ScriptDir%\nRun, C:/SkullKid/Roms/"+rom+"\nsleep, 1500\nSend {F"+str(f_key)+"}\nWinActivate, ahk_exe EmuHawk.exe\nreturn")
+		else:
+			file.store_string("SendMode Input\nSetWorkingDir %A_ScriptDir%\nRun, C:/SkullKid/Roms/"+rom+"\nsleep, 1000\nSend {F"+str(f_key)+"}\nsleep, 300\nWinActivate, ahk_exe EmuHawk.exe\nreturn")
+	last_rom = rom
+	
 func load_setlist():
 	temp_list = load_JSON("res://Godot_Scripts/Set_List.json")
 	games_order = temp_list["GamesList"]
