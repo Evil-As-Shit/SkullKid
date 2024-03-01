@@ -1835,6 +1835,7 @@ music_player = NodePath("../debug/AudioStreamPlayer")
 intro_animation = NodePath("../StartLayer/Control/skullkid/intro_animation")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="StartLayer"]
 layout_mode = 3
@@ -1943,7 +1944,6 @@ scale = Vector2(7, -7)
 texture = ExtResource("9_hmoht")
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
@@ -1961,7 +1961,7 @@ centered = false
 
 [node name="SkullKidSprite" type="AnimatedSprite2D" parent="BorderLayer/Control"]
 use_parent_material = true
-position = Vector2(190, 105)
+position = Vector2(159, 108)
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_ddhhl")
 autoplay = "default"
@@ -1998,19 +1998,7 @@ bbcode_enabled = true
 fit_content = true
 scroll_active = false
 
-[node name="x420" type="RichTextLabel" parent="BorderLayer/Control"]
-self_modulate = Color(0, 0, 0, 1)
-layout_mode = 0
-offset_left = 250.0
-offset_top = 125.0
-offset_right = 545.0
-offset_bottom = 215.0
-theme_override_fonts/normal_font = ExtResource("6_jxu4g")
-theme_override_font_sizes/normal_font_size = 48
-text = "x420"
-
 [node name="MapLayer" type="Node2D" parent="."]
-visible = false
 material = ExtResource("4_sleoy")
 position = Vector2(210, -15)
 scale = Vector2(5, 5)
