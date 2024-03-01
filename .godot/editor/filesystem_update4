@@ -2,5 +2,5 @@ res://2.0/Scences/Game.tscn
 res://Scenes/PixelFade.gdshader
 res://Assets/pixelfadeshader.tres
 res://2.0/Scripts/Game_State.gd
-res://2.0/Scences/SetListEditor.tscn
-res://Godot_Scripts/Set_List.json
+res://2.0/Scences/light.gdshader
+res://2.0/Scences/LightShow.gd

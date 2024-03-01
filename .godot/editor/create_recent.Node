@@ -1,4 +1,11 @@
 Sprite2D
+PathFollow2D
+Path2D
+BackBufferCopy
+ColorRect
+TextureRect
+PointLight2D
+Polygon2D
 AnimationPlayer
 AnimatedSprite2D
 RichTextLabel
@@ -7,15 +14,12 @@ AudioStreamPlayer
 CanvasLayer
 TextEdit
 Node2D
-ColorRect
 Control
 Node
 HSlider
 SubViewport
 SubViewportContainer
 TileMap
-PathFollow2D
-Path2D
 Tree
 Button
 VBoxContainer
@@ -26,5 +30,3 @@ MarginContainer
 HSeparator
 Container
 ScrollContainer
-Camera2D
-HBoxContainer

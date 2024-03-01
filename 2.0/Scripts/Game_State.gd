@@ -11,7 +11,8 @@ extends Node
 @export var practice_label : RichTextLabel
 @export var set_list_controller : Control
 @export var music_player : AudioStreamPlayer
-
+@export var intro_animation : AnimationPlayer
+var curtain_down : bool = true
 var game_num= 0   #game number
 var song_num = 0   #song number
 var text_list = []
@@ -87,24 +88,29 @@ func _input(event):
 			set_list_controller.show()
 
 	if event.is_action_pressed("Next_Song"):
-		if current_state == STATE.GAME:
-			if(songs_list[game_num].size() - 1 != song_num):
-				song_num = song_num + 1
-				the_program()
-				return
-			else:
-				game_num = game_num + 1
-				song_num = 0
-				if(game_num> game_list.size()-1):
-					print("game over")
-#					OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
-					game_num = 0
-					song_num = 0
-					current_state = STATE.START
-					set_process_input(true)
+		if curtain_down == false:
+			if current_state == STATE.GAME:
+				if(songs_list[game_num].size() - 1 != song_num):
+					song_num = song_num + 1
+					the_program()
+					return
 				else:
-					set_process_input(false)
-					current_state = STATE.MAP
+					game_num = game_num + 1
+					song_num = 0
+					if(game_num> game_list.size()-1):
+						print("game over")
+	#					OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
+						game_num = 0
+						song_num = 0
+						current_state = STATE.START
+						set_process_input(true)
+					else:
+						set_process_input(false)
+						current_state = STATE.MAP
+		else:
+			intro_animation.play("intro")
+			curtain_down = false
+			return
 
 		if current_state == STATE.MAP:
 			if practice_mode == false:
@@ -116,12 +122,13 @@ func _input(event):
 				set_process_input(true)
 			current_state = STATE.GAME
 
-		if current_state == STATE.START:
-			start_layer.hide()
-			load_setlist()
-			current_state = STATE.MAP
-			if practice_mode == false:
-				set_process_input(false)
+		if curtain_down == false:
+			if current_state == STATE.START:
+				start_layer.hide()
+				load_setlist()
+				current_state = STATE.MAP
+				if practice_mode == false:
+					set_process_input(false)
 
 	if event.is_action_pressed("Previous_Song"):
 		if(song_num != 0):
@@ -211,8 +218,7 @@ func load_setlist():
 	char_mover.play(str(level_offset))
 	char_mover.stop()
 
-
-func _on_check_button_toggled(button_pressed):
+func _on_check_button_toggled():
 	if practice_mode == false:
 		practice_mode = true
 		practice_label.show()
