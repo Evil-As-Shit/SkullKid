@@ -1,4 +1,7 @@
+AnimationPlayer
 Sprite2D
+Node2D
+Node
 AnimatedSprite2D
 Control
 PathFollow2D
@@ -8,14 +11,11 @@ ColorRect
 TextureRect
 PointLight2D
 Polygon2D
-AnimationPlayer
 RichTextLabel
 CheckButton
 AudioStreamPlayer
 CanvasLayer
 TextEdit
-Node2D
-Node
 HSlider
 SubViewport
 SubViewportContainer
