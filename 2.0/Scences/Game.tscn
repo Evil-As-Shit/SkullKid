@@ -1,4 +1,4 @@
-[gd_scene load_steps=235 format=3 uid="uid://bv2r7csuhfiok"]
+[gd_scene load_steps=238 format=3 uid="uid://bv2r7csuhfiok"]
 
 [ext_resource type="Texture2D" uid="uid://ck3b04rffg5d5" path="res://Assets/Start Menu/SKTitleScreen.png" id="2_77cid"]
 [ext_resource type="Script" path="res://2.0/Scripts/Game_State.gd" id="2_u4c6k"]
@@ -17,12 +17,15 @@
 [ext_resource type="Texture2D" uid="uid://cga75hrpyqpu0" path="res://Assets/Map/TacomaMarioWorldMap1.png" id="7_13wx3"]
 [ext_resource type="Texture2D" uid="uid://ba0jds8d1ixbb" path="res://Assets/Start Menu/Curtain.png" id="7_na3vh"]
 [ext_resource type="Texture2D" uid="uid://cgnmonv26vyjp" path="res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png" id="8_sw1fe"]
+[ext_resource type="Texture2D" uid="uid://ek72f0qdmo3k" path="res://Assets/Start Menu/NemoBlimp.png" id="9_3v1nf"]
 [ext_resource type="Shader" path="res://2.0/Scences/light.gdshader" id="9_8ibgc"]
 [ext_resource type="Texture2D" uid="uid://bbytilgmermbi" path="res://Assets/Map/TacomaMarioWorldMapBushesForeground1.png" id="9_blng1"]
 [ext_resource type="Texture2D" uid="uid://mpp7tcha2x5a" path="res://Assets/Start Menu/SpotLight.png" id="9_hmoht"]
 [ext_resource type="Script" path="res://2.0/Scences/LightShow.gd" id="9_lbnq1"]
+[ext_resource type="Texture2D" uid="uid://dhkset4jqmavo" path="res://Assets/Start Menu/MegaSkullKid.png" id="10_pid2f"]
 [ext_resource type="Texture2D" uid="uid://b1qmndrm2l4mh" path="res://Assets/Start Menu/light.png" id="10_x6fe3"]
 [ext_resource type="Texture2D" uid="uid://b8rv2lx0kvkpv" path="res://Assets/Map/Level_Nub_Apear.png" id="10_xblk7"]
+[ext_resource type="Texture2D" uid="uid://ce1rwgiw3p06j" path="res://Assets/Start Menu/Background Stuff.png" id="11_042js"]
 [ext_resource type="Texture2D" uid="uid://dqgqsyjashild" path="res://Assets/Start Menu/darkmode.png" id="11_78axs"]
 [ext_resource type="Texture2D" uid="uid://2yk5vqmhnr0m" path="res://Assets/Map/Level_Nub_Sprite.png" id="11_kqu0a"]
 [ext_resource type="Texture2D" uid="uid://b3dvese13yfjs" path="res://Assets/Map/GhostHosue.png" id="11_ruwvr"]
@@ -201,7 +204,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../../LightShow/Path2D:position")
+tracks/2/path = NodePath("../LightShow/Path2D:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -213,7 +216,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("../../LightShow/Path2D2:position")
+tracks/3/path = NodePath("../LightShow/Path2D2:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -225,7 +228,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("../../LightShow/Path2D:modulate")
+tracks/4/path = NodePath("../LightShow/Path2D:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -237,7 +240,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../../LightShow/Path2D2:modulate")
+tracks/5/path = NodePath("../LightShow/Path2D2:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -277,7 +280,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../../LightShow/Path2D:position")
+tracks/2/path = NodePath("../LightShow/Path2D:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -289,7 +292,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("../../LightShow/Path2D2:position")
+tracks/3/path = NodePath("../LightShow/Path2D2:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -301,7 +304,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("../../LightShow/Path2D:modulate")
+tracks/4/path = NodePath("../LightShow/Path2D:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -313,7 +316,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../../LightShow/Path2D2:modulate")
+tracks/5/path = NodePath("../LightShow/Path2D2:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -1829,13 +1832,12 @@ map_path = NodePath("../MapLayer/map_path")
 char_mover = NodePath("../MapLayer/Character/PathFollow2D/char_mover")
 level_nubs = NodePath("../MapLayer/level_nubs")
 text_label = NodePath("../BorderLayer/Control/game_name")
-practice_label = NodePath("../debug/Practice_Label")
+practice_label = NodePath("../Control/Practice_Label")
 set_list_controller = NodePath("../debug")
 music_player = NodePath("../debug/AudioStreamPlayer")
 intro_animation = NodePath("../StartLayer/Control/skullkid/intro_animation")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="StartLayer"]
 layout_mode = 3
@@ -1884,66 +1886,81 @@ libraries = {
 "": SubResource("AnimationLibrary_yy5pc")
 }
 
+[node name="NemoBlimp" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(298.2, 48.4)
+texture = ExtResource("9_3v1nf")
+
+[node name="megaman" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(342, 131.4)
+texture = ExtResource("10_pid2f")
+
+[node name="Sprite2D" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(192, 102.4)
+texture = ExtResource("11_042js")
+
 [node name="cutain" type="Sprite2D" parent="StartLayer/Control"]
 position = Vector2(192, 112.6)
+scale = Vector2(1, 1)
 texture = ExtResource("7_na3vh")
 
-[node name="LightShow" type="BackBufferCopy" parent="StartLayer" node_paths=PackedStringArray("light1", "light2")]
+[node name="LightShow" type="BackBufferCopy" parent="StartLayer/Control" node_paths=PackedStringArray("light1", "light2")]
 z_index = 1
-position = Vector2(914, 526)
+position = Vector2(182.8, 105.2)
+scale = Vector2(0.2, 0.2)
 copy_mode = 2
 script = ExtResource("9_lbnq1")
 light1 = NodePath("Path2D/PathFollow2D")
 light2 = NodePath("Path2D2/PathFollow2D")
 
-[node name="dark" type="Sprite2D" parent="StartLayer/LightShow"]
+[node name="dark" type="Sprite2D" parent="StartLayer/Control/LightShow"]
 visible = false
 modulate = Color(1, 1, 1, 0)
 scale = Vector2(5, 5)
 texture = ExtResource("11_78axs")
 
-[node name="Path2D" type="Path2D" parent="StartLayer/LightShow"]
+[node name="Path2D" type="Path2D" parent="StartLayer/Control/LightShow"]
 rotation = 0.352195
 curve = SubResource("Curve2D_5v6km")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="StartLayer/LightShow/Path2D"]
-position = Vector2(241.459, -254.207)
+[node name="PathFollow2D" type="PathFollow2D" parent="StartLayer/Control/LightShow/Path2D"]
+position = Vector2(241.46, -254.207)
 progress = 330.056
 rotates = false
 
-[node name="light" type="Sprite2D" parent="StartLayer/LightShow/Path2D/PathFollow2D"]
+[node name="light" type="Sprite2D" parent="StartLayer/Control/LightShow/Path2D/PathFollow2D"]
 visible = false
 material = SubResource("ShaderMaterial_xwp74")
 scale = Vector2(5, 5)
 texture = ExtResource("10_x6fe3")
 
-[node name="Sprite2D" type="Sprite2D" parent="StartLayer/LightShow/Path2D/PathFollow2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StartLayer/Control/LightShow/Path2D/PathFollow2D"]
 scale = Vector2(7, 7)
 texture = ExtResource("9_hmoht")
 
-[node name="Path2D2" type="Path2D" parent="StartLayer/LightShow"]
+[node name="Path2D2" type="Path2D" parent="StartLayer/Control/LightShow"]
 rotation = -0.326118
 scale = Vector2(-1, 1)
 curve = SubResource("Curve2D_5v6km")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="StartLayer/LightShow/Path2D2"]
-position = Vector2(-259.243, -275.318)
+[node name="PathFollow2D" type="PathFollow2D" parent="StartLayer/Control/LightShow/Path2D2"]
+position = Vector2(-259.245, -275.319)
 progress = 2616.39
 rotates = false
 
-[node name="light" type="Sprite2D" parent="StartLayer/LightShow/Path2D2/PathFollow2D"]
+[node name="light" type="Sprite2D" parent="StartLayer/Control/LightShow/Path2D2/PathFollow2D"]
 visible = false
 material = SubResource("ShaderMaterial_xwp74")
 scale = Vector2(5, 5)
 texture = ExtResource("10_x6fe3")
 
-[node name="Sprite2D2" type="Sprite2D" parent="StartLayer/LightShow/Path2D2/PathFollow2D"]
+[node name="Sprite2D2" type="Sprite2D" parent="StartLayer/Control/LightShow/Path2D2/PathFollow2D"]
 position = Vector2(-46.6166, 32.3115)
 rotation = 2.78246
 scale = Vector2(7, -7)
 texture = ExtResource("9_hmoht")
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
@@ -1999,6 +2016,7 @@ fit_content = true
 scroll_active = false
 
 [node name="MapLayer" type="Node2D" parent="."]
+visible = false
 material = ExtResource("4_sleoy")
 position = Vector2(210, -15)
 scale = Vector2(5, 5)
@@ -2137,21 +2155,6 @@ centered = false
 [node name="debug" type="CanvasLayer" parent="."]
 visible = false
 
-[node name="Practice_Label" type="RichTextLabel" parent="debug"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -690.0
-offset_top = -205.0
-offset_right = 715.0
-offset_bottom = 125.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/normal_font = ExtResource("6_jxu4g")
-theme_override_font_sizes/normal_font_size = 90
-
 [node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
 
 [node name="CheckButton" type="CheckButton" parent="debug/SetList"]
@@ -2173,5 +2176,29 @@ theme_override_font_sizes/normal_font_size = 32
 text = "Practice Mode"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="debug"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Practice_Label" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 436.0
+offset_top = 542.0
+offset_right = 1841.0
+offset_bottom = 872.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("6_jxu4g")
+theme_override_font_sizes/normal_font_size = 90
 
 [connection signal="toggled" from="debug/SetList/CheckButton" to="Game_Controller" method="_on_check_button_toggled"]

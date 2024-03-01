@@ -248,7 +248,7 @@ func load_setlist():
 	char_mover.play(str(level_offset))
 	char_mover.stop()
 
-func _on_check_button_toggled():
+func _on_check_button_toggled(_button_pressed):
 	if practice_mode == false:
 		practice_mode = true
 		practice_label.show()
