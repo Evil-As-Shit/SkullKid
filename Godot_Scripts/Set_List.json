@@ -346,7 +346,7 @@
 	"Metroid": {
 		"Games": {
 			"Kraid's Theme": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Metroid.nes",
 				"State": 3
 			},

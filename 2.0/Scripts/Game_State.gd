@@ -11,6 +11,7 @@ extends Node
 @export var practice_label : RichTextLabel
 @export var set_list_controller : Control
 @export var music_player : AudioStreamPlayer
+
 var game_num= 0   #game number
 var song_num = 0   #song number
 var text_list = []
@@ -24,6 +25,7 @@ var set_start = false
 var level_offset = 0
 var loaded_mp3 : AudioStream = null
 var practice_mode = false
+var music_position : float
 enum STATE {START, MAP, GAME}
 
 var current_state : set = set_current_state
@@ -67,8 +69,16 @@ func set_current_state(new_state):
 	current_state = new_state
 
 func _input(event):
+	if event.is_action_pressed("pause_play"):
+		if music_player.is_playing():
+			music_position = music_player.get_playback_position()
+			music_player.stop()
+		else:
+			music_player.play(music_position)
+
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit()
+		
 	if event.is_action_pressed("Set_List"):
 		if set_list_controller.is_visible():
 			set_list_controller.hide()
@@ -87,7 +97,7 @@ func _input(event):
 				song_num = 0
 				if(game_num> game_list.size()-1):
 					print("game over")
-					OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
+#					OS.execute("C:/SkullKid/SkullKidGame/Win_Scripts/Close_Dolphin.bat",[])
 					game_num = 0
 					song_num = 0
 					current_state = STATE.START

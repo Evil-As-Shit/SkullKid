@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh7mgaiwfcmge"
+path="res://.godot/imported/Aquatic Ambiance.mp3-755939ccd98657b788d60bd8d661080d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Donkey Kong Country/Aquatic Ambiance.mp3"
+dest_files=["res://.godot/imported/Aquatic Ambiance.mp3-755939ccd98657b788d60bd8d661080d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
