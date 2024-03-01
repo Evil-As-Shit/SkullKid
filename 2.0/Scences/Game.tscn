@@ -1,15 +1,21 @@
-[gd_scene load_steps=204 format=3 uid="uid://bv2r7csuhfiok"]
+[gd_scene load_steps=228 format=3 uid="uid://bv2r7csuhfiok"]
 
+[ext_resource type="Texture2D" uid="uid://ck3b04rffg5d5" path="res://Assets/Start Menu/SKTitleScreen.png" id="2_77cid"]
 [ext_resource type="Script" path="res://2.0/Scripts/Game_State.gd" id="2_u4c6k"]
 [ext_resource type="Texture2D" uid="uid://cnadxupix736u" path="res://Assets/Boarder.png" id="3_38kj2"]
+[ext_resource type="Texture2D" uid="uid://jycsm6rfv8gr" path="res://Assets/Start Menu/CarlTitle_Screen.png" id="3_e3rqd"]
+[ext_resource type="Texture2D" uid="uid://bob5vom2bqww3" path="res://Assets/Start Menu/VinceTitle_Screen.png" id="4_k0wk6"]
 [ext_resource type="Material" uid="uid://bv64bmjb2tc7x" path="res://Assets/pixelfadeshader.tres" id="4_sleoy"]
 [ext_resource type="PackedScene" uid="uid://dndp3bh21id4v" path="res://2.0/Scences/SetListEditor.tscn" id="4_v82cf"]
-[ext_resource type="Texture2D" uid="uid://bjdidvigy2myl" path="res://Assets/SKTitleScreen.png" id="4_ydgyx"]
+[ext_resource type="Texture2D" uid="uid://bjvfyfvcqm6t1" path="res://Assets/Start Menu/LouisTitle_Screen.png" id="5_l3kxp"]
 [ext_resource type="Texture2D" uid="uid://cn75g8j5evndk" path="res://Assets/Map/TacomaMarioWorldMap1_WaterLayer.png" id="5_wmcry"]
+[ext_resource type="Texture2D" uid="uid://bi4bbs8wgvyti" path="res://Assets/Start Menu/AlexTitle_Screen.png" id="6_js01i"]
 [ext_resource type="FontFile" uid="uid://b6x221cxlxdrh" path="res://Assets/Map/Super-Mario-World.ttf" id="6_jxu4g"]
 [ext_resource type="Texture2D" uid="uid://dd84ow0gtxi3f" path="res://Assets/Map/WaterAnimation.png" id="6_rv3na"]
 [ext_resource type="Texture2D" uid="uid://cj2cfjvng8oyr" path="res://Assets/Skull_Kid_Sprite-sheet.png" id="7_3fxn4"]
+[ext_resource type="Texture2D" uid="uid://qqx3erixywi7" path="res://Assets/Start Menu/SKText.png" id="7_6c32g"]
 [ext_resource type="Texture2D" uid="uid://cga75hrpyqpu0" path="res://Assets/Map/TacomaMarioWorldMap1.png" id="7_13wx3"]
+[ext_resource type="Texture2D" uid="uid://ba0jds8d1ixbb" path="res://Assets/Start Menu/Curtain.png" id="7_na3vh"]
 [ext_resource type="Texture2D" uid="uid://cgnmonv26vyjp" path="res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png" id="8_sw1fe"]
 [ext_resource type="Texture2D" uid="uid://bbytilgmermbi" path="res://Assets/Map/TacomaMarioWorldMapBushesForeground1.png" id="9_blng1"]
 [ext_resource type="Texture2D" uid="uid://b8rv2lx0kvkpv" path="res://Assets/Map/Level_Nub_Apear.png" id="10_xblk7"]
@@ -17,41 +23,210 @@
 [ext_resource type="Texture2D" uid="uid://b3dvese13yfjs" path="res://Assets/Map/GhostHosue.png" id="11_ruwvr"]
 [ext_resource type="Texture2D" uid="uid://dljk5p12vcrtj" path="res://Assets/Skull_Kid_Map_Sprite.png" id="12_ci15c"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mtx6h"]
-atlas = ExtResource("4_ydgyx")
-region = Rect2(0, 0, 755, 675)
+[sub_resource type="AtlasTexture" id="AtlasTexture_07yix"]
+atlas = ExtResource("3_e3rqd")
+region = Rect2(0, 0, 32, 29)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4dfjt"]
-atlas = ExtResource("4_ydgyx")
-region = Rect2(755, 0, 755, 675)
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkvgi"]
+atlas = ExtResource("3_e3rqd")
+region = Rect2(32, 0, 32, 29)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p5j5u"]
-atlas = ExtResource("4_ydgyx")
-region = Rect2(1510, 0, 755, 675)
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2p6s"]
+atlas = ExtResource("3_e3rqd")
+region = Rect2(64, 0, 32, 29)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_id8y2"]
-atlas = ExtResource("4_ydgyx")
-region = Rect2(2265, 0, 755, 675)
+[sub_resource type="AtlasTexture" id="AtlasTexture_yod7u"]
+atlas = ExtResource("3_e3rqd")
+region = Rect2(96, 0, 32, 29)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_owqd5"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_gpnqk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mtx6h")
+"texture": SubResource("AtlasTexture_07yix")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4dfjt")
+"texture": SubResource("AtlasTexture_tkvgi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p5j5u")
+"texture": SubResource("AtlasTexture_u2p6s")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_id8y2")
+"texture": SubResource("AtlasTexture_yod7u")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 10.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbsis"]
+atlas = ExtResource("4_k0wk6")
+region = Rect2(0, 0, 24, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qqvd"]
+atlas = ExtResource("4_k0wk6")
+region = Rect2(24, 0, 24, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1nti"]
+atlas = ExtResource("4_k0wk6")
+region = Rect2(48, 0, 24, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trtsu"]
+atlas = ExtResource("4_k0wk6")
+region = Rect2(72, 0, 24, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xotd1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbsis")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qqvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1nti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trtsu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcos8"]
+atlas = ExtResource("5_l3kxp")
+region = Rect2(0, 0, 22, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlbid"]
+atlas = ExtResource("5_l3kxp")
+region = Rect2(22, 0, 22, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3805e"]
+atlas = ExtResource("5_l3kxp")
+region = Rect2(44, 0, 22, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayob3"]
+atlas = ExtResource("5_l3kxp")
+region = Rect2(66, 0, 22, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4gh87"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcos8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlbid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3805e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayob3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poorq"]
+atlas = ExtResource("6_js01i")
+region = Rect2(0, 0, 26, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xndra"]
+atlas = ExtResource("6_js01i")
+region = Rect2(26, 0, 26, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_biiha"]
+atlas = ExtResource("6_js01i")
+region = Rect2(52, 0, 26, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_do2mo"]
+atlas = ExtResource("6_js01i")
+region = Rect2(78, 0, 26, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xutet"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poorq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xndra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_biiha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_do2mo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_y8xsf"]
+resource_name = "intro"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.8, 2.3, 2.49347, 2.63917),
+"transitions": PackedFloat32Array(2.46229, 0.37893, 1.51572, 1),
+"update": 0,
+"values": [Vector2(192, 8), Vector2(192, 122.4), Vector2(192, 108.4), Vector2(192, 122.4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../cutain:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(192, 111.2), Vector2(192, 111.2), Vector2(192, -78.6)]
+}
+
+[sub_resource type="Animation" id="Animation_7gcgi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(192, 8)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../cutain:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(192, 111.2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yy5pc"]
+_data = {
+"RESET": SubResource("Animation_7gcgi"),
+"intro": SubResource("Animation_y8xsf")
+}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jb05i"]
 atlas = ExtResource("7_3fxn4")
@@ -1549,23 +1724,62 @@ set_list_controller = NodePath("../debug/SetList")
 music_player = NodePath("../debug/AudioStreamPlayer")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
-visible = false
+scale = Vector2(5, 5)
+transform = Transform2D(5, 0, 0, 5, 0, 0)
 
 [node name="Control" type="Control" parent="StartLayer"]
 layout_mode = 3
 anchors_preset = 0
+offset_left = 1.52588e-05
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StartLayer/Control"]
-position = Vector2(363, 3.8147e-06)
-scale = Vector2(1.6, 1.6)
-sprite_frames = SubResource("SpriteFrames_owqd5")
-autoplay = "default"
-frame_progress = 0.714644
+[node name="Backgound" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(-8.00002, 2.80001)
+scale = Vector2(0.994877, 0.96807)
+texture = ExtResource("2_77cid")
 centered = false
 
+[node name="carl" type="AnimatedSprite2D" parent="StartLayer/Control"]
+position = Vector2(200, 168.4)
+sprite_frames = SubResource("SpriteFrames_gpnqk")
+autoplay = "default"
+frame_progress = 0.661975
+
+[node name="vince" type="AnimatedSprite2D" parent="StartLayer/Control"]
+position = Vector2(234, 168.4)
+sprite_frames = SubResource("SpriteFrames_xotd1")
+autoplay = "default"
+frame_progress = 0.113683
+
+[node name="louis" type="AnimatedSprite2D" parent="StartLayer/Control"]
+position = Vector2(149.8, 168)
+sprite_frames = SubResource("SpriteFrames_4gh87")
+autoplay = "default"
+frame_progress = 0.168675
+
+[node name="alex" type="AnimatedSprite2D" parent="StartLayer/Control"]
+position = Vector2(174.8, 169)
+sprite_frames = SubResource("SpriteFrames_xutet")
+autoplay = "default"
+frame_progress = 0.370961
+
+[node name="cutain" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(192, 111.2)
+texture = ExtResource("7_na3vh")
+
+[node name="skullkid" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(192, 8)
+texture = ExtResource("7_6c32g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StartLayer/Control/skullkid"]
+autoplay = "intro"
+libraries = {
+"": SubResource("AnimationLibrary_yy5pc")
+}
+
 [node name="BorderLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
@@ -1806,5 +2020,9 @@ theme_override_font_sizes/normal_font_size = 32
 text = "Practice Mode"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="debug"]
+
+[node name="Curtain" type="Sprite2D" parent="."]
+position = Vector2(863, 573)
+texture = ExtResource("7_na3vh")
 
 [connection signal="toggled" from="debug/SetList/CheckButton" to="Game_Controller" method="_on_check_button_toggled"]

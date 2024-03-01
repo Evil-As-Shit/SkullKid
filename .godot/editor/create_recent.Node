@@ -1,14 +1,14 @@
+Sprite2D
+AnimationPlayer
+AnimatedSprite2D
 RichTextLabel
 CheckButton
 AudioStreamPlayer
 CanvasLayer
-AnimatedSprite2D
 TextEdit
-AnimationPlayer
 Node2D
 ColorRect
 Control
-Sprite2D
 Node
 HSlider
 SubViewport

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6bc25c51eulc"
+path="res://.godot/imported/Game Select.mp3-63f1509444326639aa9bc7a1980d7f70.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Megaman 3/Game Select.mp3"
+dest_files=["res://.godot/imported/Game Select.mp3-63f1509444326639aa9bc7a1980d7f70.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
