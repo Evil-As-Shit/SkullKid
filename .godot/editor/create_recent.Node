@@ -1,8 +1,9 @@
-AnimationPlayer
-Sprite2D
+AnimatedSprite2D
+Timer
 Node2D
 Node
-AnimatedSprite2D
+AnimationPlayer
+Sprite2D
 Control
 PathFollow2D
 Path2D
@@ -29,4 +30,3 @@ CheckBox
 MarginContainer
 HSeparator
 Container
-ScrollContainer

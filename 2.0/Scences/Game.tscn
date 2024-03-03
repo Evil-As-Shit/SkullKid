@@ -1,4 +1,4 @@
-[gd_scene load_steps=250 format=3 uid="uid://bv2r7csuhfiok"]
+[gd_scene load_steps=263 format=3 uid="uid://bv2r7csuhfiok"]
 
 [ext_resource type="Texture2D" uid="uid://ck3b04rffg5d5" path="res://Assets/Start Menu/SKTitleScreen.png" id="2_77cid"]
 [ext_resource type="Script" path="res://2.0/Scripts/Game_State.gd" id="2_u4c6k"]
@@ -14,10 +14,12 @@
 [ext_resource type="Texture2D" uid="uid://bi4bbs8wgvyti" path="res://Assets/Start Menu/AlexTitle_Screen.png" id="6_js01i"]
 [ext_resource type="FontFile" uid="uid://b6x221cxlxdrh" path="res://Assets/Map/Super-Mario-World.ttf" id="6_jxu4g"]
 [ext_resource type="Texture2D" uid="uid://dd84ow0gtxi3f" path="res://Assets/Map/WaterAnimation.png" id="6_rv3na"]
+[ext_resource type="Script" path="res://2.0/Scences/tetris.gd" id="6_x5n60"]
 [ext_resource type="Texture2D" uid="uid://cj2cfjvng8oyr" path="res://Assets/Skull_Kid_Sprite-sheet.png" id="7_3fxn4"]
 [ext_resource type="Texture2D" uid="uid://qqx3erixywi7" path="res://Assets/Start Menu/SKText.png" id="7_6c32g"]
 [ext_resource type="Texture2D" uid="uid://cga75hrpyqpu0" path="res://Assets/Map/TacomaMarioWorldMap1.png" id="7_13wx3"]
 [ext_resource type="Texture2D" uid="uid://ba0jds8d1ixbb" path="res://Assets/Start Menu/Curtain.png" id="7_na3vh"]
+[ext_resource type="PackedScene" uid="uid://bnxyjo6oivxd" path="res://2.0/Scences/tetris_pieces.tscn" id="7_qp30n"]
 [ext_resource type="Texture2D" uid="uid://cgnmonv26vyjp" path="res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png" id="8_sw1fe"]
 [ext_resource type="Texture2D" uid="uid://ek72f0qdmo3k" path="res://Assets/Start Menu/NemoBlimp.png" id="9_3v1nf"]
 [ext_resource type="Shader" path="res://2.0/Scences/light.gdshader" id="9_8ibgc"]
@@ -32,8 +34,85 @@
 [ext_resource type="Texture2D" uid="uid://2yk5vqmhnr0m" path="res://Assets/Map/Level_Nub_Sprite.png" id="11_kqu0a"]
 [ext_resource type="Texture2D" uid="uid://b3dvese13yfjs" path="res://Assets/Map/GhostHosue.png" id="11_ruwvr"]
 [ext_resource type="Texture2D" uid="uid://dljk5p12vcrtj" path="res://Assets/Skull_Kid_Map_Sprite.png" id="12_ci15c"]
+[ext_resource type="Texture2D" uid="uid://dgctfstchxdkt" path="res://Assets/Start Menu/Ground.png" id="16_as07q"]
+[ext_resource type="Texture2D" uid="uid://b5x2xvoteuyg0" path="res://Assets/Start Menu/Waterfall(8frames).png" id="17_ncvbu"]
 [ext_resource type="Texture2D" uid="uid://dexgad8wm6rpx" path="res://Assets/Start Menu/BigCloud.png" id="19_41crm"]
 [ext_resource type="Texture2D" uid="uid://caflqr7wjjlnn" path="res://Assets/Start Menu/SmallCloud.png" id="20_ggrhj"]
+
+[sub_resource type="Animation" id="Animation_a81bk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NemoBlimp:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(345.2, 54.2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("big:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(48, 40.4)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("big2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(278, 29.6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("small:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(104.2, 90)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("small2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(405.6, 67.6)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("small3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(292, 52)]
+}
 
 [sub_resource type="Animation" id="Animation_amued"]
 resource_name = "sky_animation"
@@ -111,81 +190,6 @@ tracks/5/keys = {
 "transitions": PackedFloat32Array(1, 0, 1),
 "update": 0,
 "values": [Vector2(292, 52), Vector2(0.200012, 52), Vector2(395.2, 52)]
-}
-
-[sub_resource type="Animation" id="Animation_a81bk"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NemoBlimp:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(345.2, 54.2)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("big:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(48, 40.4)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("big2:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(278, 29.6)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("small:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(104.2, 90)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("small2:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(405.6, 67.6)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("small3:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(292, 52)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b4tvy"]
@@ -529,6 +533,70 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nmit"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(0, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kddo5"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(23, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsyvx"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(46, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56a4l"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(69, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unhi6"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(92, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ror53"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(115, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4v01k"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(138, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywibu"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(161, 0, 23, 91)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nac0r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nmit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kddo5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsyvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56a4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unhi6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ror53")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4v01k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywibu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
 }]
 
 [sub_resource type="Curve2D" id="Curve2D_5v6km"]
@@ -2053,7 +2121,6 @@ texture = ExtResource("2_77cid")
 centered = false
 
 [node name="clouds" type="Node2D" parent="StartLayer/Control"]
-scale = Vector2(1, 1)
 
 [node name="small" type="Sprite2D" parent="StartLayer/Control/clouds"]
 position = Vector2(104.2, 90)
@@ -2069,12 +2136,10 @@ texture = ExtResource("20_ggrhj")
 
 [node name="NemoBlimp" type="Sprite2D" parent="StartLayer/Control/clouds"]
 position = Vector2(345.2, 54.2)
-scale = Vector2(1, 1)
 texture = ExtResource("9_3v1nf")
 
 [node name="big" type="Sprite2D" parent="StartLayer/Control/clouds"]
 position = Vector2(48, 40.4)
-scale = Vector2(1, 1)
 texture = ExtResource("19_41crm")
 
 [node name="big2" type="Sprite2D" parent="StartLayer/Control/clouds"]
@@ -2086,6 +2151,31 @@ autoplay = "sky_animation"
 libraries = {
 "": SubResource("AnimationLibrary_b4tvy")
 }
+
+[node name="tetris_rain" type="Node2D" parent="StartLayer/Control"]
+
+[node name="tetris" type="Node2D" parent="StartLayer/Control/tetris_rain"]
+script = ExtResource("6_x5n60")
+
+[node name="Tetris_Pieces" parent="StartLayer/Control/tetris_rain/tetris" instance=ExtResource("7_qp30n")]
+position = Vector2(40.6, -30.4)
+animation = &"5"
+frame_progress = 0.0
+
+[node name="Fall" type="Timer" parent="StartLayer/Control/tetris_rain"]
+wait_time = 0.35
+autostart = true
+
+[node name="spawn" type="Timer" parent="StartLayer/Control/tetris_rain"]
+wait_time = 5.0
+autostart = true
+
+[node name="FastFall" type="Timer" parent="StartLayer/Control/tetris_rain"]
+wait_time = 0.1
+autostart = true
+
+[node name="LeftRight" type="Timer" parent="StartLayer/Control/tetris_rain"]
+wait_time = 0.1
 
 [node name="skullkid" type="Sprite2D" parent="StartLayer/Control"]
 position = Vector2(192, 8)
@@ -2099,21 +2189,18 @@ libraries = {
 [node name="waterfall" type="AnimatedSprite2D" parent="StartLayer/Control"]
 visible = false
 position = Vector2(167.4, 154.4)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_aemkf")
 autoplay = "default"
-frame_progress = 0.0440595
+frame_progress = 0.203202
 
 [node name="mountain" type="Sprite2D" parent="StartLayer/Control"]
 position = Vector2(60, 86.4)
-scale = Vector2(1, 1)
 texture = ExtResource("6_4xgwl")
 region_enabled = true
 region_rect = Rect2(298, 383, 145, 191)
 
 [node name="hills" type="Sprite2D" parent="StartLayer/Control"]
 position = Vector2(192, 109)
-scale = Vector2(1, 1)
 texture = ExtResource("11_042js")
 
 [node name="megaman" type="Sprite2D" parent="StartLayer/Control"]
@@ -2127,28 +2214,42 @@ autoplay = "default"
 frame_progress = 0.697653
 
 [node name="vince" type="AnimatedSprite2D" parent="StartLayer/Control"]
-position = Vector2(237.575, 168.413)
+position = Vector2(233.775, 168.413)
 sprite_frames = SubResource("SpriteFrames_xotd1")
 autoplay = "default"
 frame_progress = 0.149363
 
 [node name="louis" type="AnimatedSprite2D" parent="StartLayer/Control"]
-position = Vector2(146.975, 168.013)
+position = Vector2(152.775, 168.013)
 sprite_frames = SubResource("SpriteFrames_4gh87")
 autoplay = "default"
 frame_progress = 0.206854
 
 [node name="alex" type="AnimatedSprite2D" parent="StartLayer/Control"]
-position = Vector2(174.175, 169.013)
+position = Vector2(175.975, 169.013)
 sprite_frames = SubResource("SpriteFrames_xutet")
 autoplay = "default"
 frame_progress = 0.40664
 
+[node name="waterfall2" type="AnimatedSprite2D" parent="StartLayer/Control"]
+position = Vector2(64.4, 144.2)
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_nac0r")
+autoplay = "default"
+frame_progress = 0.267833
+
+[node name="Ground" type="Sprite2D" parent="StartLayer/Control"]
+position = Vector2(-8, 182)
+texture = ExtResource("16_as07q")
+centered = false
+
 [node name="cutain" type="Sprite2D" parent="StartLayer/Control"]
+visible = false
 position = Vector2(192, 112.6)
 texture = ExtResource("7_na3vh")
 
 [node name="LightShow" type="BackBufferCopy" parent="StartLayer/Control" node_paths=PackedStringArray("light1", "light2")]
+visible = false
 z_index = 1
 position = Vector2(182.8, 105.2)
 scale = Vector2(0.2, 0.2)
@@ -2446,4 +2547,8 @@ grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("6_jxu4g")
 theme_override_font_sizes/normal_font_size = 90
 
+[connection signal="timeout" from="StartLayer/Control/tetris_rain/Fall" to="StartLayer/Control/tetris_rain/tetris" method="_on_fall_timeout"]
+[connection signal="timeout" from="StartLayer/Control/tetris_rain/spawn" to="StartLayer/Control/tetris_rain/tetris" method="_on_spawn_timeout"]
+[connection signal="timeout" from="StartLayer/Control/tetris_rain/FastFall" to="StartLayer/Control/tetris_rain/tetris" method="_on_fast_fall_timeout"]
+[connection signal="timeout" from="StartLayer/Control/tetris_rain/LeftRight" to="StartLayer/Control/tetris_rain/tetris" method="_on_left_right_timeout"]
 [connection signal="toggled" from="debug/SetList/CheckButton" to="Game_Controller" method="_on_check_button_toggled"]

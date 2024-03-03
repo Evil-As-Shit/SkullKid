@@ -2,4 +2,5 @@ res://2.0/Scences/Game.tscn
 res://Scenes/PixelFade.gdshader
 res://Assets/pixelfadeshader.tres
 res://2.0/Scences/light.gdshader
-res://2.0/Scences/NemoBlimp.gd
+res://2.0/Scences/tetris_pieces.tscn
+res://2.0/Scences/tetris.gd
