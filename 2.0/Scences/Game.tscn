@@ -391,6 +391,70 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nmit"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(0, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kddo5"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(23, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsyvx"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(46, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56a4l"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(69, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unhi6"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(92, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ror53"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(115, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4v01k"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(138, 0, 23, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywibu"]
+atlas = ExtResource("17_ncvbu")
+region = Rect2(161, 0, 23, 91)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nac0r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nmit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kddo5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsyvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56a4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unhi6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ror53")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4v01k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywibu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_07yix"]
 atlas = ExtResource("3_e3rqd")
 region = Rect2(0, 0, 32, 29)
@@ -533,70 +597,6 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 10.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0nmit"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(0, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kddo5"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(23, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bsyvx"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(46, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_56a4l"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(69, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_unhi6"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(92, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ror53"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(115, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4v01k"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(138, 0, 23, 91)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ywibu"]
-atlas = ExtResource("17_ncvbu")
-region = Rect2(161, 0, 23, 91)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_nac0r"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0nmit")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kddo5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bsyvx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_56a4l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_unhi6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ror53")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4v01k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ywibu")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
 }]
 
 [sub_resource type="Curve2D" id="Curve2D_5v6km"]
@@ -2199,6 +2199,13 @@ texture = ExtResource("6_4xgwl")
 region_enabled = true
 region_rect = Rect2(298, 383, 145, 191)
 
+[node name="waterfall2" type="AnimatedSprite2D" parent="StartLayer/Control"]
+position = Vector2(71.4, 160.2)
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_nac0r")
+autoplay = "default"
+frame_progress = 0.849358
+
 [node name="hills" type="Sprite2D" parent="StartLayer/Control"]
 position = Vector2(192, 109)
 texture = ExtResource("11_042js")
@@ -2231,25 +2238,16 @@ sprite_frames = SubResource("SpriteFrames_xutet")
 autoplay = "default"
 frame_progress = 0.40664
 
-[node name="waterfall2" type="AnimatedSprite2D" parent="StartLayer/Control"]
-position = Vector2(64.4, 144.2)
-scale = Vector2(1, 1)
-sprite_frames = SubResource("SpriteFrames_nac0r")
-autoplay = "default"
-frame_progress = 0.267833
-
 [node name="Ground" type="Sprite2D" parent="StartLayer/Control"]
 position = Vector2(-8, 182)
 texture = ExtResource("16_as07q")
 centered = false
 
 [node name="cutain" type="Sprite2D" parent="StartLayer/Control"]
-visible = false
 position = Vector2(192, 112.6)
 texture = ExtResource("7_na3vh")
 
 [node name="LightShow" type="BackBufferCopy" parent="StartLayer/Control" node_paths=PackedStringArray("light1", "light2")]
-visible = false
 z_index = 1
 position = Vector2(182.8, 105.2)
 scale = Vector2(0.2, 0.2)
@@ -2499,9 +2497,9 @@ texture = ExtResource("9_blng1")
 centered = false
 
 [node name="debug" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
+visible = false
 
 [node name="CheckButton" type="CheckButton" parent="debug/SetList"]
 layout_mode = 0
