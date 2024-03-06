@@ -1,4 +1,4 @@
-[gd_scene load_steps=263 format=3 uid="uid://bv2r7csuhfiok"]
+[gd_scene load_steps=268 format=3 uid="uid://bv2r7csuhfiok"]
 
 [ext_resource type="Texture2D" uid="uid://ck3b04rffg5d5" path="res://Assets/Start Menu/SKTitleScreen.png" id="2_77cid"]
 [ext_resource type="Script" path="res://2.0/Scripts/Game_State.gd" id="2_u4c6k"]
@@ -15,7 +15,6 @@
 [ext_resource type="FontFile" uid="uid://b6x221cxlxdrh" path="res://Assets/Map/Super-Mario-World.ttf" id="6_jxu4g"]
 [ext_resource type="Texture2D" uid="uid://dd84ow0gtxi3f" path="res://Assets/Map/WaterAnimation.png" id="6_rv3na"]
 [ext_resource type="Script" path="res://2.0/Scences/tetris.gd" id="6_x5n60"]
-[ext_resource type="Texture2D" uid="uid://cj2cfjvng8oyr" path="res://Assets/Skull_Kid_Sprite-sheet.png" id="7_3fxn4"]
 [ext_resource type="Texture2D" uid="uid://qqx3erixywi7" path="res://Assets/Start Menu/SKText.png" id="7_6c32g"]
 [ext_resource type="Texture2D" uid="uid://cga75hrpyqpu0" path="res://Assets/Map/TacomaMarioWorldMap1.png" id="7_13wx3"]
 [ext_resource type="Texture2D" uid="uid://ba0jds8d1ixbb" path="res://Assets/Start Menu/Curtain.png" id="7_na3vh"]
@@ -38,6 +37,8 @@
 [ext_resource type="Texture2D" uid="uid://b5x2xvoteuyg0" path="res://Assets/Start Menu/Waterfall(8frames).png" id="17_ncvbu"]
 [ext_resource type="Texture2D" uid="uid://dexgad8wm6rpx" path="res://Assets/Start Menu/BigCloud.png" id="19_41crm"]
 [ext_resource type="Texture2D" uid="uid://caflqr7wjjlnn" path="res://Assets/Start Menu/SmallCloud.png" id="20_ggrhj"]
+[ext_resource type="Texture2D" uid="uid://cvdu51buh67jf" path="res://Assets/Map/Skull Kid Animations.png" id="27_akdna"]
+[ext_resource type="Texture2D" uid="uid://deu1cohwkwsx4" path="res://Assets/Map/BobbingSquid.png" id="38_uhqj2"]
 
 [sub_resource type="Animation" id="Animation_a81bk"]
 length = 0.001
@@ -608,40 +609,33 @@ point_count = 9
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xwp74"]
 shader = ExtResource("9_8ibgc")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jb05i"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(42, 0, 21, 25)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq5ds"]
+atlas = ExtResource("27_akdna")
+region = Rect2(0, 0, 53, 26)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3dsp2"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(63, 0, 21, 25)
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5v8m"]
+atlas = ExtResource("27_akdna")
+region = Rect2(53, 0, 53, 26)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n746y"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(84, 0, 21, 25)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_588xe"]
-atlas = ExtResource("7_3fxn4")
-region = Rect2(105, 0, 21, 25)
+[sub_resource type="AtlasTexture" id="AtlasTexture_i05e0"]
+atlas = ExtResource("27_akdna")
+region = Rect2(106, 0, 53, 26)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ddhhl"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jb05i")
+"texture": SubResource("AtlasTexture_kq5ds")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3dsp2")
+"texture": SubResource("AtlasTexture_m5v8m")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_n746y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_588xe")
+"texture": SubResource("AtlasTexture_i05e0")
 }],
 "loop": true,
 "name": &"default",
-"speed": 7.0
+"speed": 9.0
 }]
 
 [sub_resource type="Animation" id="Animation_mjc37"]
@@ -2087,6 +2081,42 @@ _data = {
 "RESET": SubResource("Animation_qaka6")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hc54l"]
+atlas = ExtResource("38_uhqj2")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cr5m8"]
+atlas = ExtResource("38_uhqj2")
+region = Rect2(16, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bx1op"]
+atlas = ExtResource("38_uhqj2")
+region = Rect2(32, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkt6o"]
+atlas = ExtResource("38_uhqj2")
+region = Rect2(48, 0, 16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fljs8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hc54l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cr5m8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bx1op")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkt6o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Game_Controller" type="Node" parent="." node_paths=PackedStringArray("border_layer", "map_layer", "start_layer", "pixel_fade", "map_path", "char_mover", "level_nubs", "text_label", "practice_label", "set_list_controller", "music_player", "intro_animation")]
@@ -2105,6 +2135,7 @@ music_player = NodePath("../debug/AudioStreamPlayer")
 intro_animation = NodePath("../StartLayer/Control/skullkid/intro_animation")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="StartLayer"]
 layout_mode = 3
@@ -2201,7 +2232,6 @@ region_rect = Rect2(298, 383, 145, 191)
 
 [node name="waterfall2" type="AnimatedSprite2D" parent="StartLayer/Control"]
 position = Vector2(71.4, 160.2)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_nac0r")
 autoplay = "default"
 frame_progress = 0.849358
@@ -2244,10 +2274,12 @@ texture = ExtResource("16_as07q")
 centered = false
 
 [node name="cutain" type="Sprite2D" parent="StartLayer/Control"]
+visible = false
 position = Vector2(192, 112.6)
 texture = ExtResource("7_na3vh")
 
 [node name="LightShow" type="BackBufferCopy" parent="StartLayer/Control" node_paths=PackedStringArray("light1", "light2")]
+visible = false
 z_index = 1
 position = Vector2(182.8, 105.2)
 scale = Vector2(0.2, 0.2)
@@ -2304,7 +2336,6 @@ scale = Vector2(7, -7)
 texture = ExtResource("9_hmoht")
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
@@ -2322,12 +2353,11 @@ centered = false
 
 [node name="SkullKidSprite" type="AnimatedSprite2D" parent="BorderLayer/Control"]
 use_parent_material = true
-position = Vector2(159, 108)
+position = Vector2(83, 108)
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_ddhhl")
 autoplay = "default"
-frame_progress = 0.798474
-flip_h = true
+frame_progress = 0.238512
 
 [node name="ColorRect" type="ColorRect" parent="BorderLayer/Control"]
 layout_mode = 1
@@ -2360,7 +2390,6 @@ fit_content = true
 scroll_active = false
 
 [node name="MapLayer" type="Node2D" parent="."]
-visible = false
 material = ExtResource("4_sleoy")
 position = Vector2(210, -15)
 scale = Vector2(5, 5)
@@ -2492,14 +2521,20 @@ libraries = {
 
 [node name="map_foreground" type="Sprite2D" parent="MapLayer"]
 use_parent_material = true
-position = Vector2(0, -5.96046e-08)
+position = Vector2(0, 60)
 texture = ExtResource("9_blng1")
 centered = false
 
+[node name="squid" type="AnimatedSprite2D" parent="MapLayer"]
+position = Vector2(122.6, 232.2)
+sprite_frames = SubResource("SpriteFrames_fljs8")
+autoplay = "default"
+frame_progress = 0.773956
+
 [node name="debug" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="SetList" parent="debug" instance=ExtResource("4_v82cf")]
-visible = false
 
 [node name="CheckButton" type="CheckButton" parent="debug/SetList"]
 layout_mode = 0

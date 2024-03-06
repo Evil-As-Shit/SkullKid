@@ -1,25 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709439846
+::res://::1709446519
 default_env.tres::Environment::-1::1703471840::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1703471840::0::1::::<><>::
 icon.png::CompressedTexture2D::8949611521789323265::1703471840::1703471840::1::::<><>::
 ::res://2.0/::1708378547
-::res://2.0/Scences/::1709367238
-Game.tscn::PackedScene::3917214067504830494::1709367237::0::1::::<><>::uid://ck3b04rffg5d5::::res://Assets/Start Menu/SKTitleScreen.png<>res://2.0/Scripts/Game_State.gd<>uid://cnadxupix736u::::res://Assets/Boarder.png<>uid://jycsm6rfv8gr::::res://Assets/Start Menu/CarlTitle_Screen.png<>uid://bob5vom2bqww3::::res://Assets/Start Menu/VinceTitle_Screen.png<>uid://bv64bmjb2tc7x::::res://Assets/pixelfadeshader.tres<>uid://dndp3bh21id4v::::res://2.0/Scences/SetListEditor.tscn<>uid://bhr51sjer3gbw::::res://Assets/Start Menu/ZeldaWaterfall(4Frames).png<>uid://bjvfyfvcqm6t1::::res://Assets/Start Menu/LouisTitle_Screen.png<>uid://cn75g8j5evndk::::res://Assets/Map/TacomaMarioWorldMap1_WaterLayer.png<>uid://bdicy8mjyj5il::::res://Assets/Start Menu/ZeldaMountains.png<>uid://bi4bbs8wgvyti::::res://Assets/Start Menu/AlexTitle_Screen.png<>uid://b6x221cxlxdrh::::res://Assets/Map/Super-Mario-World.ttf<>uid://dd84ow0gtxi3f::::res://Assets/Map/WaterAnimation.png<>res://2.0/Scences/tetris.gd<>uid://cj2cfjvng8oyr::::res://Assets/Skull_Kid_Sprite-sheet.png<>uid://qqx3erixywi7::::res://Assets/Start Menu/SKText.png<>uid://cga75hrpyqpu0::::res://Assets/Map/TacomaMarioWorldMap1.png<>uid://ba0jds8d1ixbb::::res://Assets/Start Menu/Curtain.png<>uid://bnxyjo6oivxd::::res://2.0/Scences/tetris_pieces.tscn<>uid://cgnmonv26vyjp::::res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png<>uid://ek72f0qdmo3k::::res://Assets/Start Menu/NemoBlimp.png<>res://2.0/Scences/light.gdshader<>uid://bbytilgmermbi::::res://Assets/Map/TacomaMarioWorldMapBushesForeground1.png<>uid://mpp7tcha2x5a::::res://Assets/Start Menu/SpotLight.png<>res://2.0/Scences/LightShow.gd<>uid://dhkset4jqmavo::::res://Assets/Start Menu/MegaSkullKid.png<>uid://b1qmndrm2l4mh::::res://Assets/Start Menu/light.png<>uid://b8rv2lx0kvkpv::::res://Assets/Map/Level_Nub_Apear.png<>uid://ce1rwgiw3p06j::::res://Assets/Start Menu/Background Stuff.png<>uid://dqgqsyjashild::::res://Assets/Start Menu/darkmode.png<>uid://2yk5vqmhnr0m::::res://Assets/Map/Level_Nub_Sprite.png<>uid://b3dvese13yfjs::::res://Assets/Map/GhostHosue.png<>uid://dljk5p12vcrtj::::res://Assets/Skull_Kid_Map_Sprite.png<>uid://dgctfstchxdkt::::res://Assets/Start Menu/Ground.png<>uid://dexgad8wm6rpx::::res://Assets/Start Menu/BigCloud.png<>uid://caflqr7wjjlnn::::res://Assets/Start Menu/SmallCloud.png
-light.gdshader::Shader::-1::1709367238::0::1::::<><>::
+::res://2.0/Scences/::1709609062
+Game.tscn::PackedScene::3917214067504830494::1709609062::0::1::::<><>::uid://ck3b04rffg5d5::::res://Assets/Start Menu/SKTitleScreen.png<>res://2.0/Scripts/Game_State.gd<>uid://cnadxupix736u::::res://Assets/Boarder.png<>uid://jycsm6rfv8gr::::res://Assets/Start Menu/CarlTitle_Screen.png<>uid://bob5vom2bqww3::::res://Assets/Start Menu/VinceTitle_Screen.png<>uid://bv64bmjb2tc7x::::res://Assets/pixelfadeshader.tres<>uid://dndp3bh21id4v::::res://2.0/Scences/SetListEditor.tscn<>uid://bhr51sjer3gbw::::res://Assets/Start Menu/ZeldaWaterfall(4Frames).png<>uid://bjvfyfvcqm6t1::::res://Assets/Start Menu/LouisTitle_Screen.png<>uid://cn75g8j5evndk::::res://Assets/Map/TacomaMarioWorldMap1_WaterLayer.png<>uid://bdicy8mjyj5il::::res://Assets/Start Menu/ZeldaMountains.png<>uid://bi4bbs8wgvyti::::res://Assets/Start Menu/AlexTitle_Screen.png<>uid://b6x221cxlxdrh::::res://Assets/Map/Super-Mario-World.ttf<>uid://dd84ow0gtxi3f::::res://Assets/Map/WaterAnimation.png<>res://2.0/Scences/tetris.gd<>uid://qqx3erixywi7::::res://Assets/Start Menu/SKText.png<>uid://cga75hrpyqpu0::::res://Assets/Map/TacomaMarioWorldMap1.png<>uid://ba0jds8d1ixbb::::res://Assets/Start Menu/Curtain.png<>uid://bnxyjo6oivxd::::res://2.0/Scences/tetris_pieces.tscn<>uid://cgnmonv26vyjp::::res://Assets/Map/Skull_Kid_Map_Reveal_Sprites.png<>uid://ek72f0qdmo3k::::res://Assets/Start Menu/NemoBlimp.png<>res://2.0/Scences/light.gdshader<>uid://bbytilgmermbi::::res://Assets/Map/TacomaMarioWorldMapBushesForeground1.png<>uid://mpp7tcha2x5a::::res://Assets/Start Menu/SpotLight.png<>res://2.0/Scences/LightShow.gd<>uid://dhkset4jqmavo::::res://Assets/Start Menu/MegaSkullKid.png<>uid://b1qmndrm2l4mh::::res://Assets/Start Menu/light.png<>uid://b8rv2lx0kvkpv::::res://Assets/Map/Level_Nub_Apear.png<>uid://ce1rwgiw3p06j::::res://Assets/Start Menu/Background Stuff.png<>uid://dqgqsyjashild::::res://Assets/Start Menu/darkmode.png<>uid://2yk5vqmhnr0m::::res://Assets/Map/Level_Nub_Sprite.png<>uid://b3dvese13yfjs::::res://Assets/Map/GhostHosue.png<>uid://dljk5p12vcrtj::::res://Assets/Skull_Kid_Map_Sprite.png<>uid://dgctfstchxdkt::::res://Assets/Start Menu/Ground.png<>uid://b5x2xvoteuyg0::::res://Assets/Start Menu/Waterfall(8frames).png<>uid://dexgad8wm6rpx::::res://Assets/Start Menu/BigCloud.png<>uid://caflqr7wjjlnn::::res://Assets/Start Menu/SmallCloud.png<>uid://cvdu51buh67jf::::res://Assets/Map/Skull Kid Animations.png
+light.gdshader::Shader::-1::1709609062::0::1::::<><>::
 LightShow.gd::GDScript::-1::1709268888::0::1::::<>BackBufferCopy<>::
 map.tscn::PackedScene::8348602125595986017::1708459298::0::1::::<><>::uid://bv64bmjb2tc7x
 NemoBlimp.gd::GDScript::-1::1709329180::0::1::::<>Sprite2D<>::
 SetListEditor.tscn::PackedScene::8078870973355538683::1709255459::0::1::::<><>::res://Godot_Scripts/list_controller.gd<>uid://b6x221cxlxdrh
-tetris.gd::GDScript::-1::1709367237::0::1::::<>Node2D<>::
-tetris_pieces.tscn::PackedScene::98465600093115109::1709348488::0::1::::<><>::uid://cqoyni74fy7rt::::res://Assets/Start Menu/Tetris.png
+tetris.gd::GDScript::-1::1709439901::0::1::::<>Node2D<>::
+tetris_pieces.tscn::PackedScene::98465600093115109::1709606148::0::1::::<><>::uid://cqoyni74fy7rt::::res://Assets/Start Menu/Tetris.png
 ::res://2.0/Scripts/::1709337321
 Game_State.gd::GDScript::-1::1709337321::0::1::::<>Node<>::
 Global.gd::GDScript::-1::1708393970::0::1::::<>Node<>::
-::res://Assets/::1709367237
+::res://Assets/::1709609062
 Boarder.png::CompressedTexture2D::5685520632953314514::1709270394::1709270395::1::::<><>::
 Map_Node.png::CompressedTexture2D::5786512624690162990::1703471840::1703471840::1::::<><>::
-pixelfadeshader.tres::ShaderMaterial::3926145333317474695::1709367237::0::1::::<><>::res://Scenes/PixelFade.gdshader
+pixelfadeshader.tres::ShaderMaterial::3926145333317474695::1709609062::0::1::::<><>::res://Scenes/PixelFade.gdshader
 SKTitleScreen.png::CompressedTexture2D::3024805618675967107::1708392139::1708392143::1::::<><>::
 Skull_Kid_Map_Sprite.png::CompressedTexture2D::7950580303899094291::1703471840::1703471840::1::::<><>::
 Skull_Kid_Sprite-sheet.png::CompressedTexture2D::5460410028194201537::1708417568::1708417570::1::::<><>::
@@ -30,18 +30,20 @@ SkullKid64.png::CompressedTexture2D::2410608595521748766::1703471840::1707176151
 SkullKid64_Transparent.png::CompressedTexture2D::920025235133533604::1703473041::1707176180::1::::<><>::
 SkullKidMasksSticker.png::CompressedTexture2D::2452143917105717475::1703471840::1707176162::1::::<><>::
 SK_Icon_Inverted.png::CompressedTexture2D::8882559315148255979::1703471840::1707176197::1::::<><>::
-::res://Assets/Map/::1709325809
+::res://Assets/Map/::1709609067
 black.png::CompressedTexture2D::9073744958224222958::1707341863::1707341866::1::::<><>::
+BobbingSquid.png::CompressedTexture2D::7482887941266728003::1709609067::1709609070::1::::<><>::
 GhostHosue.png::CompressedTexture2D::4359184591663110552::1707351044::1707351562::1::::<><>::
 Level_Nub_Apear.png::CompressedTexture2D::4739070833288153443::1707188511::1707188521::1::::<><>::
 Level_Nub_Sprite.png::CompressedTexture2D::1945305716331455098::1707260868::1707260871::1::::<><>::
 Level_Nub_Sprite_Completed.png::CompressedTexture2D::7179132529958009768::1707188504::1707188521::1::::<><>::
+Skull Kid Animations.png::CompressedTexture2D::6254269498790764383::1709609067::1709609070::1::::<><>::
 Skull_Kid_Map_Reveal_Sprites.png::CompressedTexture2D::5221565661558520537::1707425761::1707425778::1::::<><>::
 Super-Mario-World.ttf::FontFile::4611444469812941597::1707877344::1707877345::1::::<><>::
 TacomaMarioWorldExportWaterAnimation.png::CompressedTexture2D::9151730425311383891::1707188485::1707188521::1::::<><>::
 TacomaMarioWorldMap1.png::CompressedTexture2D::5195971341439446557::1709325800::1709325809::1::::<><>::
 TacomaMarioWorldMap1_WaterLayer.png::CompressedTexture2D::5753190395900002316::1707292302::1707292304::1::::<><>::
-TacomaMarioWorldMapBushesForeground1.png::CompressedTexture2D::2507323090219300642::1709325800::1709325809::1::::<><>::
+TacomaMarioWorldMapBushesForeground1.png::CompressedTexture2D::2507323090219300642::1709609067::1709609070::1::::<><>::
 TacomaMarioWorldMapClearedPaths1.png::CompressedTexture2D::4038528130069913784::1707188477::1707188521::1::::<><>::
 WaterAnimation.png::CompressedTexture2D::7439740036214999621::1707261437::1707261438::1::::<><>::
 ::res://Assets/Music/::1709255405
@@ -86,7 +88,7 @@ Labyrinth.mp3::AudioStreamMP3::2213963570869185631::1708730290::1709006474::1:::
 Tal Tal Heights.mp3::AudioStreamMP3::3954191401734834148::1708730351::1708996090::1::::<><>::
 Temple.mp3::AudioStreamMP3::194861676582229911::1708730267::1708996090::1::::<><>::
 Zelda - Main Theme.mp3::AudioStreamMP3::883829697851719598::1708730180::1708996090::1::::<><>::
-::res://Assets/Start Menu/::1709439833
+::res://Assets/Start Menu/::1709606304
 AlexTitle_Screen.png::CompressedTexture2D::3007861887859064438::1709257182::1709257222::1::::<><>::
 Background Stuff.png::CompressedTexture2D::5108342368422975875::1709328058::1709328076::1::::<><>::
 BigCloud.png::CompressedTexture2D::7487862625496856465::1709328058::1709328076::1::::<><>::
@@ -94,6 +96,7 @@ CarlTitle_Screen.png::CompressedTexture2D::681398916064633401::1709257193::17092
 Curtain.png::CompressedTexture2D::2438582934431448703::1709261789::1709261803::1::::<><>::
 darkmode.png::CompressedTexture2D::8295674706474713521::1709266156::1709266228::1::::<><>::
 Ground.png::CompressedTexture2D::7585687395120423835::1709335695::1709335698::1::::<><>::
+LargeWaterfall(8frames).png::CompressedTexture2D::5024385103537006348::1709606301::1709606304::1::::<><>::
 light.png::CompressedTexture2D::4245112665994358619::1709266227::1709266228::1::::<><>::
 LouisTitle_Screen.png::CompressedTexture2D::3061818948458601468::1709257202::1709257222::1::::<><>::
 MegaSkullKid.png::CompressedTexture2D::7672328826305296920::1709325800::1709325809::1::::<><>::
@@ -108,18 +111,18 @@ VinceTitle_Screen.png::CompressedTexture2D::3372988638927913808::1709257213::170
 Waterfall(8frames).png::CompressedTexture2D::4541248238729001861::1709439833::1709439847::1::::<><>::
 ZeldaMountains.png::CompressedTexture2D::2613668281928514171::1709328058::1709328076::1::::<><>::
 ZeldaWaterfall(4Frames).png::CompressedTexture2D::2914705910931974400::1709328058::1709328076::1::::<><>::
-::res://Godot_Scripts/::1709273624
+::res://Godot_Scripts/::1709606006
 list_controller.gd::GDScript::-1::1708463899::0::1::::<>Control<>::
 MainMenu.gd::GDScript::-1::1708402824::0::1::::<>Node2D<>::
 SetListGen.gd::GDScript::-1::1703471840::0::1::::<>ScrollContainer<>::
 Set_List - Copy (2).json::JSON::-1::1703471840::0::1::::<><>::
 Set_List - Copy.json::JSON::-1::1703471840::0::1::::<><>::
-Set_List.json::JSON::-1::1709273624::0::1::::<><>::
-::res://Scenes/::1709367238
+Set_List.json::JSON::-1::1709606006::0::1::::<><>::
+::res://Scenes/::1709609062
 HSlider.gd::GDScript::-1::1707896745::0::1::::<>HSlider<>::
 Map.tscn::PackedScene::3488018220719649095::1703471840::0::1::::<><>::
 Map_Node.tscn::PackedScene::2193328223288623046::1707895794::0::1::::<><>::uid://copbauiflnp63
-PixelFade.gdshader::Shader::-1::1709367238::0::1::::<><>::
+PixelFade.gdshader::Shader::-1::1709609062::0::1::::<><>::
 Program.tscn::PackedScene::634038654255306484::1708459298::0::1::::<><>::res://Godot_Scripts/MainMenu.gd<>uid://dys1ppanqh0bn
 ::res://Win_Scripts/::1703471840
 ::res://Win_Scripts/F_Keys/::1703471840

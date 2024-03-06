@@ -271,7 +271,7 @@
 				"State": 1
 			},
 			"Mario Ending": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Super Mario Bros 3 Mix.nes",
 				"State": 1
 			},
@@ -326,12 +326,12 @@
 				"State": 2
 			},
 			"Sparkman": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mega Man 3.nes",
 				"State": 4
 			},
 			"Stage Select": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mega Man 3.nes",
 				"State": 1
 			},
