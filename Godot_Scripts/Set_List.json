@@ -22,9 +22,14 @@
 	"Banjo-Kazooie": {
 		"Games": {
 			"Gruntilda's Lair": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Banjo-Kazooie.v64",
 				"State": 1
+			},
+			"Mario's Lair": {
+				"In_Set": true,
+				"Rom": "SuperBK64.z64",
+				"State": 4
 			},
 			"Treasure Trove Cove": {
 				"In_Set": false,
@@ -72,8 +77,13 @@
 				"State": 3
 			},
 			"Island Swing": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Donkey Kong Country.smc",
+				"State": 1
+			},
+			"Mario's Swing": {
+				"In_Set": true,
+				"Rom": "Super Mario Country.smc",
 				"State": 1
 			},
 			"Title": {
@@ -235,13 +245,18 @@
 	},
 	"Luigi's Mansion": {
 		"Games": {
-			"Theme": {
+			"Mario's Mansion": {
 				"In_Set": true,
+				"Rom": "Mario's Mansion.iso",
+				"State": 7
+			},
+			"Theme": {
+				"In_Set": false,
 				"Rom": "LuigisMansion.iso",
 				"State": 3
 			},
 			"Title": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "LuigisMansion.iso",
 				"State": 5
 			}
@@ -311,17 +326,32 @@
 	"Megaman 3": {
 		"Games": {
 			"Boss Theme": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mega Man 3.nes",
 				"State": 5
 			},
 			"Intro": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mega Man 3.nes",
 				"State": 0
 			},
-			"Snakeman": {
+			"Marioman": {
 				"In_Set": true,
+				"Rom": "MegamanMushroomKingdom.nes",
+				"State": 1
+			},
+			"Marioman -Intro": {
+				"In_Set": true,
+				"Rom": "MegamanMushroomKingdom.nes",
+				"State": 0
+			},
+			"Marioman Boss": {
+				"In_Set": true,
+				"Rom": "MegamanMushroomKingdom.nes",
+				"State": 2
+			},
+			"Snakeman": {
+				"In_Set": false,
 				"Rom": "Mega Man 3.nes",
 				"State": 2
 			},
@@ -336,7 +366,7 @@
 				"State": 1
 			},
 			"Topman": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mega Man 3.nes",
 				"State": 3
 			}
@@ -346,12 +376,17 @@
 	"Metroid": {
 		"Games": {
 			"Kraid's Theme": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Metroid.nes",
 				"State": 3
 			},
-			"Metroid - Title": {
+			"Marioid": {
 				"In_Set": true,
+				"Rom": "SuperMetroidWorld.sfc",
+				"State": 2
+			},
+			"Metroid - Title": {
+				"In_Set": false,
 				"Rom": "Metroid.nes",
 				"State": 2
 			},
@@ -366,17 +401,27 @@
 	"Pokemon": {
 		"Games": {
 			"Lavender Town": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Pokemon - FireRed.gba",
 				"State": 2
 			},
-			"Title": {
+			"Mario Forest": {
 				"In_Set": true,
+				"Rom": "Pokemon Paper Mario Redux Alpha 1.gba",
+				"State": 2
+			},
+			"Mario Town": {
+				"In_Set": true,
+				"Rom": "Pokemon Paper Mario Redux Alpha 1.gba",
+				"State": 3
+			},
+			"Title": {
+				"In_Set": false,
 				"Rom": "Pokemon - FireRed.gba",
 				"State": 1
 			},
 			"Viridian Forest": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Pokemon - FireRed.gba",
 				"State": 3
 			}
@@ -397,33 +442,42 @@
 		[
 			"Title",
 			"Zelda - Main Theme",
+			"Legend of Mario - Title",
+			"Legend of Mario",
 			"Temple",
 			"Labyrinth",
 			"Tal Tal Heights",
 			"Dark World",
 			"Kokiri Forest",
-			"Dragon Roost"
+			"Dragon Roost",
+			"Mario Maker"
 		],
 		[
 			"Gruntilda's Lair",
-			"Treasure Trove Cove"
+			"Treasure Trove Cove",
+			"Mario's Lair"
 		],
 		[
 			"Title",
 			"Lavender Town",
-			"Viridian Forest"
+			"Viridian Forest",
+			"Mario Town",
+			"Mario Forest"
 		],
 		[
 			"Title",
 			"Metroid - Title",
-			"Kraid's Theme"
+			"Kraid's Theme",
+			"Marioid"
 		],
 		[
 			"Title",
+			"Mario's Mansion",
 			"Theme"
 		],
 		[
 			"Title",
+			"Mario's Swing",
 			"Island Swing",
 			"Aquatic Ambiance",
 			"Gang Plank Galleon"
@@ -434,7 +488,10 @@
 			"Snakeman",
 			"Topman",
 			"Sparkman",
-			"Boss Theme"
+			"Boss Theme",
+			"Marioman -Intro",
+			"Marioman",
+			"Marioman Boss"
 		],
 		[
 			"Title",
@@ -585,7 +642,7 @@
 				"State": 1
 			},
 			"Dragon Roost": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "ZeldaWindWaker.iso",
 				"State": 1
 			},
@@ -599,6 +656,21 @@
 				"Rom": "The Legend of Zelda.nes",
 				"State": 2
 			},
+			"Legend of Mario": {
+				"In_Set": true,
+				"Rom": "The Legend Of Super Mario.nes",
+				"State": 1
+			},
+			"Legend of Mario - Title": {
+				"In_Set": true,
+				"Rom": "The Legend Of Super Mario.nes",
+				"State": 0
+			},
+			"Mario Maker": {
+				"In_Set": true,
+				"Rom": "Mario Waker.sfc",
+				"State": 1
+			},
 			"Tal Tal Heights": {
 				"In_Set": true,
 				"Rom": "Link's Awakening.gbc",
@@ -610,12 +682,12 @@
 				"State": 1
 			},
 			"Title": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "The Legend of Zelda.nes",
 				"State": 3
 			},
 			"Zelda - Main Theme": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "The Legend of Zelda.nes",
 				"State": 1
 			}

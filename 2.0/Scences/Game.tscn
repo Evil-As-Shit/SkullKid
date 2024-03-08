@@ -2135,7 +2135,6 @@ music_player = NodePath("../debug/AudioStreamPlayer")
 intro_animation = NodePath("../StartLayer/Control/skullkid/intro_animation")
 
 [node name="StartLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="StartLayer"]
 layout_mode = 3
@@ -2274,12 +2273,10 @@ texture = ExtResource("16_as07q")
 centered = false
 
 [node name="cutain" type="Sprite2D" parent="StartLayer/Control"]
-visible = false
 position = Vector2(192, 112.6)
 texture = ExtResource("7_na3vh")
 
 [node name="LightShow" type="BackBufferCopy" parent="StartLayer/Control" node_paths=PackedStringArray("light1", "light2")]
-visible = false
 z_index = 1
 position = Vector2(182.8, 105.2)
 scale = Vector2(0.2, 0.2)
@@ -2336,6 +2333,7 @@ scale = Vector2(7, -7)
 texture = ExtResource("9_hmoht")
 
 [node name="BorderLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="BorderLayer"]
 material = ExtResource("4_sleoy")
