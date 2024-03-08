@@ -1,4 +1,9 @@
-res://default_env.tres::756de160834ef7cc033c2a79cd80f338::1659741122::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
-res://Scenes/Map.tscn::a3c6ac3bd2bbdda6e63d238787c007f7::1699322399::res://.godot/exported/133200997/export-fbac02a97d3b98b79fba58e0d274870c-Map.scn
-res://Scenes/Map_Node.tscn::ef895972daef57c3f429cbd3c543ba06::1702694487::res://.godot/exported/133200997/export-d4eb66b814af2845682deede096a4aec-Map_Node.scn
-res://Scenes/Program.tscn::ecf0b98cf112871cfd1df90ed6285a7a::1702694487::res://.godot/exported/133200997/export-8ddd26b193f2f92a576922d0062d7325-Program.scn
+res://default_env.tres::afbed0c9e6032587f1165ae47e7b3166::1703471840::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://Scenes/Map.tscn::f64b7eb45635601b51b2b7e6bcfffcd6::1703471840::res://.godot/exported/133200997/export-fbac02a97d3b98b79fba58e0d274870c-Map.scn
+res://Scenes/Map_Node.tscn::ef895972daef57c3f429cbd3c543ba06::1707895794::res://.godot/exported/133200997/export-d4eb66b814af2845682deede096a4aec-Map_Node.scn
+res://Scenes/Program.tscn::1fedce8712dfbdfd8894d52b8e5c0214::1708459298::res://.godot/exported/133200997/export-8ddd26b193f2f92a576922d0062d7325-Program.scn
+res://2.0/Scences/Game.tscn::844f1031afe042617234bfb1f9604200::1709771469::res://.godot/exported/133200997/export-d3c9fe1fadaa4c8245290c15c9296f58-Game.scn
+res://2.0/Scences/map.tscn::a741f569b15c54c61e4982ec1137028c::1708459298::res://.godot/exported/133200997/export-753376d63e70f48cada9321e16d80a21-map.scn
+res://2.0/Scences/SetListEditor.tscn::0a4fa26a2e2dbba41a93b528c96e713e::1709255459::res://.godot/exported/133200997/export-1755b2dd535a4ad8d07fb2916d376c4b-SetListEditor.scn
+res://2.0/Scences/tetris_pieces.tscn::ab8aa10bc5af513bcba3a64324dcbc09::1709771469::res://.godot/exported/133200997/export-ca1d9454fb74c912f63072485e0aa2a7-tetris_pieces.scn
+res://Assets/pixelfadeshader.tres::4f1aa487441644630b912e50ecff6297::1709771469::res://.godot/exported/133200997/export-e766e99d7243fe7b63d4c4748e7bec35-pixelfadeshader.res
