@@ -22,12 +22,12 @@
 	"Banjo-Kazooie": {
 		"Games": {
 			"Gruntilda's Lair": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Banjo-Kazooie.v64",
 				"State": 1
 			},
 			"Mario's Lair": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "SuperBK64.z64",
 				"State": 4
 			},
@@ -62,7 +62,7 @@
 				"State": 1
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Donkey Kong Country": {
 		"Games": {
@@ -77,12 +77,12 @@
 				"State": 3
 			},
 			"Island Swing": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Donkey Kong Country.smc",
 				"State": 1
 			},
 			"Mario's Swing": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Super Mario Country.smc",
 				"State": 1
 			},
@@ -92,7 +92,7 @@
 				"State": 4
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Duck Tales": {
 		"Games": {
@@ -110,23 +110,24 @@
 		"In_Set": true
 	},
 	"GamesList": [
+		"Tony Hawk Pro Skater",
 		"Zelda",
 		"Banjo-Kazooie",
-		"Pokemon",
 		"Metroid",
-		"Luigi's Mansion",
-		"Donkey Kong Country",
-		"Megaman 3",
+		"Kirby",
+		"Castlevania",
 		"Mario",
 		"Duck Tales",
 		"Karnov",
+		"Pokemon",
+		"Luigi's Mansion",
+		"Donkey Kong Country",
+		"Megaman 3",
 		"Magic Kingdom",
 		"Little Nemo",
 		"Yoshi's Island",
-		"Castlevania",
 		"Tetris",
 		"Kid Icarus",
-		"Kirby",
 		"Gremlins",
 		"Star Tropics",
 		"Rygar",
@@ -166,7 +167,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Kid Icarus": {
 		"Games": {
@@ -206,7 +207,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Little Nemo": {
 		"Games": {
@@ -246,7 +247,7 @@
 	"Luigi's Mansion": {
 		"Games": {
 			"Mario's Mansion": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mario's Mansion.iso",
 				"State": 7
 			},
@@ -256,12 +257,12 @@
 				"State": 3
 			},
 			"Title": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "LuigisMansion.iso",
 				"State": 5
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Magic Kingdom": {
 		"Games": {
@@ -326,67 +327,67 @@
 	"Megaman 3": {
 		"Games": {
 			"Boss Theme": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mega Man 3.nes",
 				"State": 5
 			},
 			"Intro": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mega Man 3.nes",
 				"State": 0
 			},
 			"Marioman": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "MegamanMushroomKingdom.nes",
 				"State": 1
 			},
 			"Marioman -Intro": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "MegamanMushroomKingdom.nes",
 				"State": 0
 			},
 			"Marioman Boss": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "MegamanMushroomKingdom.nes",
 				"State": 2
 			},
 			"Snakeman": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mega Man 3.nes",
 				"State": 2
 			},
 			"Sparkman": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mega Man 3.nes",
 				"State": 4
 			},
 			"Stage Select": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mega Man 3.nes",
 				"State": 1
 			},
 			"Topman": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Mega Man 3.nes",
 				"State": 3
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Metroid": {
 		"Games": {
 			"Kraid's Theme": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Metroid.nes",
 				"State": 3
 			},
 			"Marioid": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "SuperMetroidWorld.sfc",
 				"State": 2
 			},
 			"Metroid - Title": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Metroid.nes",
 				"State": 2
 			},
@@ -401,32 +402,32 @@
 	"Pokemon": {
 		"Games": {
 			"Lavender Town": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Pokemon - FireRed.gba",
 				"State": 2
 			},
 			"Mario Forest": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Pokemon Paper Mario Redux Alpha 1.gba",
 				"State": 2
 			},
 			"Mario Town": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Pokemon Paper Mario Redux Alpha 1.gba",
 				"State": 3
 			},
 			"Title": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Pokemon - FireRed.gba",
 				"State": 1
 			},
 			"Viridian Forest": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Pokemon - FireRed.gba",
 				"State": 3
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Rygar": {
 		"Games": {
@@ -439,6 +440,9 @@
 		"In_Set": false
 	},
 	"SongsList": [
+		[
+			"Superman"
+		],
 		[
 			"Title",
 			"Zelda - Main Theme",
@@ -459,16 +463,46 @@
 		],
 		[
 			"Title",
+			"Metroid - Title",
+			"Kraid's Theme",
+			"Marioid"
+		],
+		[
+			"Title",
+			"Grape Gardens",
+			"Green Greens",
+			"Gourmet Race"
+		],
+		[
+			"Title",
+			"Vampire Killer",
+			"Bloody Tears",
+			"Beginning"
+		],
+		[
+			"Title",
+			"SMB3 - Overworld",
+			"Mario Land",
+			"Dr. Mario",
+			"Mario World",
+			"Mario Kart 64",
+			"Mario Sunshine",
+			"Mario Ending"
+		],
+		[
+			"Title",
+			"Moon Theme"
+		],
+		[
+			"Title",
+			"Karnov"
+		],
+		[
+			"Title",
 			"Lavender Town",
 			"Viridian Forest",
 			"Mario Town",
 			"Mario Forest"
-		],
-		[
-			"Title",
-			"Metroid - Title",
-			"Kraid's Theme",
-			"Marioid"
 		],
 		[
 			"Title",
@@ -495,24 +529,6 @@
 		],
 		[
 			"Title",
-			"SMB3 - Overworld",
-			"Mario Land",
-			"Dr. Mario",
-			"Mario World",
-			"Mario Kart 64",
-			"Mario Sunshine",
-			"Mario Ending"
-		],
-		[
-			"Title",
-			"Moon Theme"
-		],
-		[
-			"Title",
-			"Karnov"
-		],
-		[
-			"Title",
 			"Haunted Mansion"
 		],
 		[
@@ -529,23 +545,11 @@
 			"Touch Fuzzy, Get Dizzy"
 		],
 		[
-			"Title",
-			"Vampire Killer",
-			"Bloody Tears",
-			"Beginning"
-		],
-		[
 			"Theme"
 		],
 		[
 			"Title",
 			"Main Theme"
-		],
-		[
-			"Title",
-			"Grape Gardens",
-			"Green Greens",
-			"Gourmet Race"
 		],
 		[
 			"Title",
@@ -614,6 +618,16 @@
 		},
 		"In_Set": false
 	},
+	"Tony Hawk Pro Skater": {
+		"Games": {
+			"Superman": {
+				"In_Set": true,
+				"Rom": "Tony Hawk's Pro Skater.z64",
+				"State": 1
+			}
+		},
+		"In_Set": true
+	},
 	"Yoshi's Island": {
 		"Games": {
 			"Flower Garden": {
@@ -642,7 +656,7 @@
 				"State": 1
 			},
 			"Dragon Roost": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "ZeldaWindWaker.iso",
 				"State": 1
 			},
@@ -657,17 +671,17 @@
 				"State": 2
 			},
 			"Legend of Mario": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "The Legend Of Super Mario.nes",
 				"State": 1
 			},
 			"Legend of Mario - Title": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "The Legend Of Super Mario.nes",
 				"State": 0
 			},
 			"Mario Maker": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Mario Waker.sfc",
 				"State": 1
 			},
@@ -682,12 +696,12 @@
 				"State": 1
 			},
 			"Title": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "The Legend of Zelda.nes",
 				"State": 3
 			},
 			"Zelda - Main Theme": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "The Legend of Zelda.nes",
 				"State": 1
 			}

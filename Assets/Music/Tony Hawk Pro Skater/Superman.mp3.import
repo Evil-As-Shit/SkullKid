@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxp0n54mi8avt"
+path="res://.godot/imported/Superman.mp3-0ffcbf788c31769976d81a1b5eff2922.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Tony Hawk Pro Skater/Superman.mp3"
+dest_files=["res://.godot/imported/Superman.mp3-0ffcbf788c31769976d81a1b5eff2922.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

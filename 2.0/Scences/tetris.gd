@@ -26,7 +26,7 @@ func _on_fall_timeout():
 	for child in pieces:
 		child.position.y += 7
 
-func move_piece(temp_object):
+func move_piece(_temp_object):
 	var pieces = get_children()
 	for child in pieces:
 		child.position.y += 7
