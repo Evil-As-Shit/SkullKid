@@ -113,21 +113,21 @@
 		"Tony Hawk Pro Skater",
 		"Zelda",
 		"Banjo-Kazooie",
-		"Metroid",
-		"Kirby",
-		"Castlevania",
-		"Mario",
 		"Duck Tales",
+		"Castlevania",
+		"Metroid",
+		"Little Nemo",
+		"Kirby",
+		"Mario",
+		"Kid Icarus",
 		"Karnov",
 		"Pokemon",
 		"Luigi's Mansion",
 		"Donkey Kong Country",
 		"Megaman 3",
 		"Magic Kingdom",
-		"Little Nemo",
 		"Yoshi's Island",
 		"Tetris",
-		"Kid Icarus",
 		"Gremlins",
 		"Star Tropics",
 		"Rygar",
@@ -167,7 +167,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Kid Icarus": {
 		"Games": {
@@ -192,7 +192,7 @@
 				"State": 1
 			},
 			"Grape Gardens": {
-				"In_Set": false,
+				"In_Set": true,
 				"Rom": "Kirbys Adventure.nes",
 				"State": 1
 			},
@@ -227,7 +227,7 @@
 				"State": 3
 			},
 			"Night Sea": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Little Nemo - The Dream Master.nes",
 				"State": 4
 			},
@@ -242,7 +242,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": false
+		"In_Set": true
 	},
 	"Luigi's Mansion": {
 		"Games": {
@@ -322,7 +322,7 @@
 				"State": 2
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Megaman 3": {
 		"Games": {
@@ -463,21 +463,33 @@
 		],
 		[
 			"Title",
-			"Metroid - Title",
-			"Kraid's Theme",
-			"Marioid"
-		],
-		[
-			"Title",
-			"Grape Gardens",
-			"Green Greens",
-			"Gourmet Race"
+			"Moon Theme"
 		],
 		[
 			"Title",
 			"Vampire Killer",
 			"Bloody Tears",
 			"Beginning"
+		],
+		[
+			"Title",
+			"Metroid - Title",
+			"Kraid's Theme",
+			"Marioid"
+		],
+		[
+			"Intro",
+			"Title Theme",
+			"Mushroom Forest",
+			"Night Sea",
+			"Cloud Ruins",
+			"Nightmare Land"
+		],
+		[
+			"Title",
+			"Grape Gardens",
+			"Green Greens",
+			"Gourmet Race"
 		],
 		[
 			"Title",
@@ -491,7 +503,7 @@
 		],
 		[
 			"Title",
-			"Moon Theme"
+			"Main Theme"
 		],
 		[
 			"Title",
@@ -532,24 +544,12 @@
 			"Haunted Mansion"
 		],
 		[
-			"Intro",
-			"Title Theme",
-			"Mushroom Forest",
-			"Night Sea",
-			"Cloud Ruins",
-			"Nightmare Land"
-		],
-		[
 			"Title",
 			"Flower Garden",
 			"Touch Fuzzy, Get Dizzy"
 		],
 		[
 			"Theme"
-		],
-		[
-			"Title",
-			"Main Theme"
 		],
 		[
 			"Title",
@@ -626,7 +626,7 @@
 				"State": 1
 			}
 		},
-		"In_Set": true
+		"In_Set": false
 	},
 	"Yoshi's Island": {
 		"Games": {
@@ -651,7 +651,7 @@
 	"Zelda": {
 		"Games": {
 			"Dark World": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Zelda - A Link to The Past.smc",
 				"State": 1
 			},
@@ -686,7 +686,7 @@
 				"State": 1
 			},
 			"Tal Tal Heights": {
-				"In_Set": true,
+				"In_Set": false,
 				"Rom": "Link's Awakening.gbc",
 				"State": 3
 			},

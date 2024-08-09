@@ -2177,10 +2177,10 @@ position = Vector2(278, 29.6)
 texture = ExtResource("19_41crm")
 
 [node name="sky_animation" type="AnimationPlayer" parent="StartLayer/Control/clouds"]
-autoplay = "sky_animation"
 libraries = {
 "": SubResource("AnimationLibrary_b4tvy")
 }
+autoplay = "sky_animation"
 
 [node name="tetris_rain" type="Node2D" parent="StartLayer/Control"]
 
